@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project heavily inspired by Dan Abramov - version ES5",
   "scripts": {
-    "start": "node server.js",
+    "start": "json-server --watch data.json | node server.js",
     "lint": "eslint src"
   },
   "repository": {

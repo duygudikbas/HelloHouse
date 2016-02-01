@@ -8,15 +8,25 @@ var Choices = require('./Choices.js');
 var Advice = require('./Advice.js');
 var Buy = require('./Buy.js');
 var Compare = require('./Compare.js');
+var ResultList = require('./ResultList.js');
+
 // var HelloBankWithNavBar = require('./HelloBankWithNavBar.js');
-      // <IndexRoute component={Choices} />    
+          
 ReactDOM.render(
     <Router>
-    <Route path="/" component={HelloBankApp}>
+    <Route path="/" component={ResultList}>
+    <IndexRoute component={ResultList} />
      <Route path="Advice" component={Advice} />
      <Route path="Buy" component={Buy} />
      <Route path="Compare" component={Compare} />
+  
     </Route>
   </Router>,
   document.getElementById('root')
 );
+
+// ReactDOM.render(
+//     <ResultList/>,
+//   document.getElementById('root')
+// );
+

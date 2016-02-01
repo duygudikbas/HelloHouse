@@ -1,0 +1,29 @@
+.ulResultList {
+  list-style-type: none;
+}
+
+.liResultList {
+  /*position: relative;*/
+  border: 1px solid black;
+  margin: 5px;
+  display: inline-block;
+  width: 260px;
+  height: 300px;
+}
+
+.imgResultList {
+  display: block;
+  margin: 0px auto;
+  height: 200px;
+  width: 200px;
+}
+
+.location {
+  color:green;
+  height: 35px;
+}
+
+.price{
+  color:white;
+  height: 35px;
+}
