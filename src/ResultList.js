@@ -6,7 +6,7 @@ var Link = require('react-router').Link
 var AResult = React.createClass({
 render: function(){
     var price = this.props.estate.price;
-    if (price) {price += " €"} ;
+    if (price) {price += " €"};
     return(
       <Link to="/Buy" estate={this.props.estate}>
         <li className="liResultList">
@@ -32,7 +32,6 @@ var ResultList = React.createClass({
     }.bind(this), 'json');
   },
 
-
   render: function(){
     console.log(this.state.estates);
        var resultElems = this.state.estates.map(function(estate) {
@@ -42,7 +41,7 @@ var ResultList = React.createClass({
     }); 
     return(
       <div className="container">        
-         <h1>RESULT LIST</h1>
+         <h1>Propositions</h1>
          <ul className="ulResultList">
          {resultElems }
          </ul> 
