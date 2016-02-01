@@ -1,0 +1,30 @@
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+.list-group-horizontal .list-group-item {
+  margin-bottom: 10;
+  margin-left:10px;
+      width: 162px;
+      background-color: #6E6E6E;
+    color: white;
+}
+.list-group-horizontal .list-group-item:first-child {
+  border-top-right-radius:0;
+  border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+  border-top-right-radius:4px;
+  border-bottom-left-radius:0;
+}
+
+.list-group-item.active {
+  background-color: #6E6E6E;
+      border-color: white;
+}
+.jumbotron_main{
+        background-color: #F3843E;
+}
+
+.text-center {
+    text-align: center;
+}

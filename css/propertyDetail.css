@@ -1,0 +1,47 @@
+.propertyDetail{
+  color: white;
+}
+
+.propertyDetail p {
+      margin-top: 7px;
+}
+.propertyDetail ul{
+  list-style-type: none ;
+  font-size: 20px;
+}
+
+.propertyDetail img {
+      width: 297px;
+}
+
+#price{
+  color:#FF5A09;
+  font-size:25px;
+}
+
+#outsidePropertyDetail{
+      padding-left: 0;
+}
+
+.propertyDetail h2{
+  color: #F3843E;
+  font-size:33px;
+  font-family: 'Lato', sans-serif;
+}
+
+.buttonMA {
+  background-color: #F3843E;
+}
+
+.buttonLA {
+  background-color: #F3843E;
+}
+
+#insidePropertyDetail{
+  padding-left: 22px;
+}
+
+#mapLink {
+        margin-left: 84px;
+    font-size: 20;
+}

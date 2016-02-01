@@ -8,7 +8,7 @@ render: function(){
     var price = this.props.estate.price;
     if (price) {price += " €"} ;
     return(
-      <Link to="/Buy" estate={this.props.estate}>
+      <Link to="/PropertyDetail" estate={this.props.estate}>
         <li className="liResultList">
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>

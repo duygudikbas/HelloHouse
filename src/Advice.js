@@ -20,7 +20,7 @@ var Advice = React.createClass({
 	  	 console.log(this.state.showInfoDiv);
 	  },
 	  render: function(){
-	  	console.log("rebder");
+	  	console.log("render");
 	    return(
 	       <div className="container">        
 	         <h1>How Can We Help You ?</h1>

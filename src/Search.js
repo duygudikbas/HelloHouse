@@ -47,7 +47,7 @@ handle:function(){
             advancedSearch = "";
         }
         return ( 
-          < div >
+          < div className="search">
            <div className="form-group">
              <label htmlFor="usr">Type:</label>
   <input type="checkbox" name="Appartment" value="Appartment" />
