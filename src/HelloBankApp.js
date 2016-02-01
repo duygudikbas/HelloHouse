@@ -20,12 +20,12 @@ var Choices =  React.createClass({
   render: function(){
     return(
         <div className="jumbotron jumbotron_main"> 
-
+       <BasicSearch/>
         <div className="text-center">
             <div>
                 <h2>You Dream ! We will make it true !</h2>
                             <div className="signature">By BNP PARIBAS FORTIS</div>
-                       <BasicSearch/>
+                
             </div>
             <div className="list-group list-group-horizontal">
               <Link to="Advice"  className="list-group-item" onClick={this.handleHidePage}>Get Advice</Link>
