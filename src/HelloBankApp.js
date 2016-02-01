@@ -4,6 +4,7 @@ var Message = require('react-message');
 var Advice = require('./Advice.js');
 var Buy = require('./Buy.js');
 var Compare = require('./Compare.js');
+var BasicSearch = require('./Search.js');
 var Link = require('react-router').Link;
 var $= require('jquery');
 
@@ -19,10 +20,12 @@ var Choices =  React.createClass({
   render: function(){
     return(
         <div className="jumbotron jumbotron_main"> 
+
         <div className="text-center">
             <div>
                 <h2>You Dream ! We will make it true !</h2>
                             <div className="signature">By BNP PARIBAS FORTIS</div>
+                       <BasicSearch/>
             </div>
             <div className="list-group list-group-horizontal">
               <Link to="Advice"  className="list-group-item" onClick={this.handleHidePage}>Get Advice</Link>
@@ -48,6 +51,7 @@ var HelloBankApp = React.createClass({
     return(
        <div className="container">   
         <div>
+
          </div>
          {this.state.show ? <Choices initialChecked = {this.state.show} callbackParent = {this.handleHideShow}/> : null} 
          { this.props.children } 

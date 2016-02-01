@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project heavily inspired by Dan Abramov - version ES5",
   "scripts": {
-    "start": "json-server --watch data.json | node server.js",
+    "start": "json-server --watch data.json cities.json | node server.js",
     "lint": "eslint src"
   },
   "repository": {
@@ -37,6 +37,7 @@
   "dependencies": {
     "history": "^1.17.0",
     "jquery": "^2.2.0",
+    "jquery-ui": "^1.10.5",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-message": "^1.4.0",
