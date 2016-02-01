@@ -1,6 +1,7 @@
 var React = require('react');
 var $ = require('jquery');
 require('jquery-ui');
+var Link = require('react-router').Link;
 var BasicSearch = React.createClass({
 handle:function(){
     console.log("wake up!!")
@@ -70,6 +71,7 @@ handle:function(){
   </div>
   <div className="form-group">
   <button onClick={this.handle}>Advanced Search</button>
+    <Link to="/ResultList">Search</Link>
     {advancedSearch}
 </div>
           < /div>
