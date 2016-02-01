@@ -1,0 +1,51 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "number": "BE12345678901234",
+      "name": "Personal Account",
+      "type": "savings",
+      "balance": 455500
+    },
+    {
+      "id": 2,
+      "number": "BE78905678901234",
+      "name": "My precious hoard",
+      "type": "current",
+      "balance": 2210000
+    }
+  ],
+  "transfers": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "amount": 1500,
+      "type": "OUT",
+      "otherNumber": "BE12345678907777",
+      "otherName": "Alan Fields",
+      "date": "2016-1-2",
+      "communication": "Thanks for the fish"
+    },
+    {
+      "id": 2,
+      "accountId": 1,
+      "amount": 3500,
+      "type": "OUT",
+      "otherNumber": "BE12345678908888",
+      "otherName": "Joe's Bar SPRL",
+      "date": "2016-1-18",
+      "communication": "Eat at Joe's"
+    },
+    {
+      "id": 3,
+      "accountId": 1,
+      "amount": 100000,
+      "otherNumber": "BE12345678909999",
+      "otherName": "Big Corp Mega Holding",
+      "date": "2016-1-1",
+      "communication": "Salary"
+    }
+  ],
+  "saved-receivers": [],
+  "periodic-transfers": []
+}
