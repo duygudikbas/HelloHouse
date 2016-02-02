@@ -43,10 +43,15 @@ var NumberWarning = React.createClass({
 
 var ResultList = React.createClass({
   getInitialState: function() {
-    return {estates: []};
+    return {estates: [], favorite : false};
   },
 
   componentDidMount: function() {
+    // console.log("called by : ");
+    // console.log(this.props.location.pathname);
+    // var favorites = false; 
+    // if (this.props.location.pathname == "/Favorites")
+    
     var url = "http://estates-api.herokuapp.com/estates";
     $.get(url, function(data) {
       this.setState({estates: data});

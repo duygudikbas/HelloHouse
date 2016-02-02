@@ -27265,5 +27265,9 @@
       "name": "Zwijndrecht"
     }
   ],
-  "favorites": []
+  "favorites": [
+    1,
+    5,
+    9
+  ]
 }
