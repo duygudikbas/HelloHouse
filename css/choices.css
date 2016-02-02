@@ -23,6 +23,7 @@
 }
 .jumbotron_main{
         background-color: #F3843E;
+        z-index: 1;
 }
 
 .text-center {

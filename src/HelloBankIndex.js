@@ -18,7 +18,7 @@ var AppointmentCompleted = require('./AppointmentCompleted.js');
 ReactDOM.render(
     <Router>
     <Route path="/" component={HelloBankApp}>
-     <IndexRoute component={ResultList}  />
+     <IndexRoute component={Choices}  />
      <Route path="Search" component={Search} />
      <Route path="Advice" component={Advice} />
      <Route path="Compare" component={Compare} />
@@ -29,6 +29,7 @@ ReactDOM.render(
         <Route path="AppointmentWhen" component={AppointmentWhen} />
         <Route path="AppointmentCompleted" component={AppointmentCompleted} />
      </Route>
+     <Route path="Favorites" component={ResultList} />
     </Route>
   </Router>,
   document.getElementById('root')
