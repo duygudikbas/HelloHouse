@@ -1,5 +1,5 @@
 .search {
-color:black;
+color:white;
 position: relative;
 }
 .appartment{
@@ -12,4 +12,8 @@ position: relative;
 
 .marginright{
   margin-right: 5px;
+}
+
+#searchAutoComplete {
+  color: black
 }

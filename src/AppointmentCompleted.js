@@ -29,7 +29,7 @@ getInitialState: function() {
                 <div className="form-group">
                 <p>Your appointment will take place on <em>{this.props.when}</em> 
                   &nbsp;at <em>Rue Royal 45, {this.props.where}</em></p>
-                  <button type="button" id="completeBtn" className="btn_default pull-right" onClick={this.HandleOnAppointmentComplete}>Complete</button>
+                  <button type="button" id="completeBtn" className="btn btn_default pull-right" onClick={this.HandleOnAppointmentComplete}>Complete</button>
                 </div>
             </div>
           </form>

@@ -98,7 +98,7 @@ var BasicSearch = React.createClass({
             < /div> 
             < div className = "row form-group" >
               < label htmlFor = "usr" className="col-xs-4"  > Location: < /label> 
-              < input type = 'text' placeholder = "Enter location" className="col-xs-8" ref="location" / >
+              < input type = 'text' id="searchAutoComplete" placeholder = "Enter location" className="col-xs-8" ref="location" / >
             < /div>
 
             < div className = " row form-group" >
@@ -108,12 +108,12 @@ var BasicSearch = React.createClass({
             < label htmlFor = "usr" className="col-xs-2"> To: < /label> 
             < input type = "number" id = "max" className="col-xs-3" placeholder =  "max"  ref="maxPrice"/ >
             < /div> < div className = "form-group" >
-            < button onClick = {
+            < button className="btn btn_default" onClick = {
                 this.handle
         } > Advanced Search < /button> {
                 advancedSearch
             } 
-            < Link to = "/ResultList" onClick={this.setFilter}> Search < /Link> < /div> < /div>
+            < Link to = "/ResultList" className="btn btn_default" onClick={this.setFilter}> Search < /Link> < /div> < /div>
             </div>
         );
     },
