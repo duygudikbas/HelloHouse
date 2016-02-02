@@ -43,19 +43,62 @@ var NumberWarning = React.createClass({
 
 var ResultList = React.createClass({
   getInitialState: function() {
-    return {estates: []};
+    return {estates: [], favorite : false};
   },
 
   componentDidMount: function() {
-    var url = "http://estates-api.herokuapp.com/estates";
-    $.get(url, function(data) {
+    console.log("called by : ");
+    console.log(this.props.location.pathname);
+    var index = this.props.location.pathname.indexOf("Favorites");
+    console.log("indexOf: "+ index);
+
+    if (index >= 0){
+      console.log("favorites : true");
+      this.setState({favorite : true});
+    }else {
+      console.log("favorites : false");
+      this.setState({favorite : false});
+    }
+    console.log("this.state");
+    console.log(this.state);
+
+    if (index == 0){
+      //favorites
+      $.get("http://localhost:3000/favorites", function(favorites) {
+        $.get("http://estates-api.herokuapp.com/estates", function(data) {
+          this.setState({estates: data});
+        }.bind(this), 'json');
+      }.bind(this), 'json');
+    }else {
+      var url = "http://estates-api.herokuapp.com/estates";
+      $.get(url, function(data) {
       this.setState({estates: data});
     }.bind(this), 'json');
+    }
+
   },
 
   filter : function(estate){
-    if (this.props.filter.minPrice > estate.price){ return false; };
-    if (this.props.filter.maxPrice < estate.price){ return false; };
+    if (this.props.filter.minPrice > 0 && this.props.filter.minPrice > estate.price){ return false; };
+    if (this.props.filter.maxPrice > 0 &&this.props.filter.maxPrice < estate.price){ return false; };
+
+    if ((this.props.filter.location !== null && this.props.filter.location.length > 0) && (estate.location.indexOf(this.props.filter.location) === -1)){ return false; };
+
+        // var filter = { 
+
+        //         minRoom :minRoom,
+        //         maxRoom : maxRoom,
+        //         minSurface : minSurface,
+        //         maxSurface : maxSurface,
+        //         garden : garden,
+        //         garage : garage,
+        //         pool : pool, 
+        //         location : location,
+        //         house : house,
+        //         appartment : appartment
+        //     };
+
+
     return true;
   },
 
