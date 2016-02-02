@@ -3,7 +3,8 @@ var Link = require('react-router').Link;
 var Choices = React.createClass({
   render: function(){
     return(
-      <div className="container choices">        
+
+
           <div className="jumbotron jumbotron_main"> 
            <div className="text-center">
               <div>
@@ -18,7 +19,7 @@ var Choices = React.createClass({
               </div>
             </div>
           </div> 
-        </div> 
+  
     );
   }
 });

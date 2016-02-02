@@ -1,4 +1,16 @@
 .search {
   color:black;
+position: relative;
+}
+.appartment{
+  display: block;
+  text-align: left;
+}
+.labelWidthInput{
+  width: 100px;
+}
 
+.marginright{
+
+  margin-right: 5px;
 }
