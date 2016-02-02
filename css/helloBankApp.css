@@ -1,6 +1,7 @@
-
-
-
+.container{
+  margin: 1px;
+  padding: 1px;
+}
 
 .app h2 {
 	font-family: 'Lobster', sans-serif

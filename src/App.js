@@ -52,7 +52,7 @@ var App = React.createClass({
   },
   render: function() {
     return (
-     <div className="container">
+     <div className="container-fluid">
           <NavBar />
           { React.cloneElement(this.props.children, {
              accounts: this.state.accounts
