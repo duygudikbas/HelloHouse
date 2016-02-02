@@ -29,10 +29,67 @@ body {
 }
 
 .infoDiv{
-	background-color :green;
-	color: white;
+	   color: green;
+    text-align: center;
 }
 
 .app p {
     color: white;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+.panel-heading{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.errorDivInvisible {
+  visibility: hidden;
+/*    position: absolute;
+    top: -9999px;*/
+}
+
+.errorDivVisible {
+  background: #ffe5e5;
+  color: #d83f48;
+  font-size: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 10px 32px;
+  visibility: visible;
+  /*position: static;*/
+}
+
+.welcome{
+  background: #65E080;
+}
+
+.btn_default{
+  background-color:#F3843E;
+  color:black;
+}
+
+.successFeedback {
+    border-radius: 25px;
+    border: 2px solid;
+    padding: 11px;
+    width: 100%;
+    margin-bottom: 13px;
+    color: green;
 }

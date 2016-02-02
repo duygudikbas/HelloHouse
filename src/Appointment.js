@@ -2,29 +2,31 @@ var React = require('react');
 var $ = require('jquery');
 
 var Appointment = React.createClass({
-    componentDidMount: function() {
-        var url = "http://localhost:3000/cities";
-     
-        $.get(url, function(data) {
-            console.log(data);
-            var doubles = data.map(function(num) {
-                    return num.zip + "-" + num.name;
-                });
-            $(this.refs.autocomplete).autocomplete({
-                source: doubles
-            });
-        }.bind(this), 'json');
-
-        console.log(this.refs.autocomplete);
-    },
+  getInitialState: function() {
+    return {appointmentDetail: {where:"", when:""}};
+  }, 
+  onInputAppointmentWhere: function(where) {
+    this.setState({appointmentDetail: {where: where}});
+  },
+  onInputAppointmentWhen: function(when) {
+    var appointmentDetail = this.state.appointmentDetail;
+    appointmentDetail.when = when;
+    this.setState({appointmentDetail: appointmentDetail});
+  },
   render: function(){
+    console.log("this.state.appointmentDetail");
+    console.log(this.state.appointmentDetail);
     return(
       <div className="container appointment">        
-           <h1>Do you need to make an appointment ?</h1>
         <div className="panel panel-default">
           <div className="panel-heading">Appointment</div>
           <div className="panel-body">
-            {this.props.children}
+            { React.cloneElement(this.props.children, {
+               appointmentDetailInputWhere: this.onInputAppointmentWhere, 
+               appointmentDetailInputWhen:this.onInputAppointmentWhen,
+               when:this.state.appointmentDetail.when,
+               where:this.state.appointmentDetail.where
+            })}
           </div>
         </div>
          </div>

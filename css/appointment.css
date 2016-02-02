@@ -1,3 +1,9 @@
-.appointment h1{
-  color:white;
+.appointment{
+      margin-top: 50%;
+}
+
+#datepickerInput{
+  width: 175px;
+    display: inline;
+        margin-right: 47px;
 }

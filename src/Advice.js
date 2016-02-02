@@ -2,7 +2,7 @@ var React = require('react');
 var UserInformation = React.createClass({
 	render : function(){
 		return (
-			<div className = "infoDiv">
+			<div className = "successFeedback">
 				&nbsp; &nbsp; &nbsp; We have received your mail ! We will contact you soon.&nbsp; 
 				Please do not hesitate to contact us via number : 00200313213 &nbsp; 
 				
@@ -75,7 +75,7 @@ var Advice = React.createClass({
 							</div>
 							 <label for="comment">Additionally, I also need to know :</label>
 	  						 <textarea className="form-control" rows="5" id="comment"></textarea><br/>
-	  						 <button type="button" className="btn btn-primary pull-right" onClick={this.HandleOnQustionSubmit}>Send</button>
+	  						 <button type="button" className="btn btn_default pull-right" onClick={this.HandleOnQustionSubmit}>Send</button>
 			            </div>
 	       			 </form>
 			    </div>

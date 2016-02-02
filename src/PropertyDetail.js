@@ -75,12 +75,10 @@ var PropertyDetail = React.createClass({
 
           <div className="row">
             <div className="col-xs-6">
-             <div className="list-group list-group-horizontal">
-                <Link to="Appointment/AppointmentWhere" className="list-group-item active" >Make Appointment</Link>
-              </div>
+              <Link to="Appointment/AppointmentWhere" className="btn btn_default" >Make Appointment</Link>
             </div>
             <div className="col-xs-6">
-                 <button type="button" className="btn btn-primary buttonLA">Loan Advice</button>
+                 <button type="button" className="btn btn_default">Add to Favourites</button>
             </div>
           </div>
 

@@ -1,0 +1,8 @@
+.appointmentComplete p{
+  color:black;
+  font-size: 19px;
+}
+
+.appointmentComplete em {
+  font-weight:bold;
+}

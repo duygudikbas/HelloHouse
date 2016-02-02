@@ -1,20 +1,36 @@
 var React = require('react');
 var $ = require('jquery');
 
-var AppointmentCompleted = React.createClass({
-    componentDidMount: function() {
+var CompleteInformation = React.createClass({
+  render : function(){
+    return (
+      <div className = "successFeedback">
+        Your appointment is successfully done!
+      </div>
+    );
+  }
+});
 
-    },
+var AppointmentCompleted = React.createClass({
+getInitialState: function() {
+     return ({showInfoDiv:false});
+  },     
+  HandleOnAppointmentComplete: function(){
+    console.log("HandleOnAppointmentComplete");
+     this.setState({showInfoDiv: true});
+     $('#completeBtn').hide();
+     console.log(this.state.showInfoDiv);
+  },
   render: function(){
     return(  
-         <form className="form">
+         <form className="form appointmentComplete">
+            {this.state.showInfoDiv ? <CompleteInformation /> : null}  
             <div className="form-group">
                 <div className="form-group">
-                  <label htmlFor="usr">COMPLETED:</label>
-                  < input type = 'text'
-                          ref = 'autocomplete'  placeholder="Enter location"/ >
+                <p>Your appointment will take place on <em>{this.props.when}</em> 
+                  &nbsp;at <em>Rue Royal 45, {this.props.where}</em></p>
+                  <button type="button" id="completeBtn" className="btn_default pull-right" onClick={this.HandleOnAppointmentComplete}>Complete</button>
                 </div>
-               <button type="button" className="btn btn-primary pull-right">Next</button>
             </div>
           </form>
     );
