@@ -3,12 +3,14 @@ var $ = require('jquery');
 var Link = require('react-router').Link
 
 
+
 var AResult = React.createClass({
 render: function(){
+    var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     if (price) {price += " €"};
     return(
-      <Link to="/PropertyDetail" estate={this.props.estate}>
+      <Link to={urlTo} >
         <li className="liResultList">
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>
