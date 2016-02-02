@@ -23,7 +23,7 @@ render: function(){
 var Warning = React.createClass({
   render: function(){
     return (
-        <p>May be could you adapt your <Link to="/Search" >Search</Link></p>
+        <p>The list contains too many results. <Link to="/Search" id="refineCriteriaAction">Please refine your criteria</Link></p>
       );}
   });
 
@@ -47,20 +47,13 @@ var ResultList = React.createClass({
   },
 
   componentDidMount: function() {
-    console.log("called by : ");
-    console.log(this.props.location.pathname);
     var index = this.props.location.pathname.indexOf("Favorites");
-    console.log("indexOf: "+ index);
 
     if (index >= 0){
-      console.log("favorites : true");
       this.setState({favorite : true});
     }else {
-      console.log("favorites : false");
       this.setState({favorite : false});
     }
-    console.log("this.state");
-    console.log(this.state);
 
     if (index == 0){
       //favorites
@@ -103,7 +96,6 @@ var ResultList = React.createClass({
   },
 
   render: function(){
-    console.log(this.state.estates);
     var filteredEstates = this.state.estates.filter(this.filter);
     var numberWarning = filteredEstates.length;
     var resultElems = filteredEstates.map(function(estate) {

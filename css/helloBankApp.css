@@ -93,3 +93,8 @@ body {
     margin-bottom: 13px;
     color: green;
 }
+
+#refineCriteriaAction {
+  color:#F3843E;
+  text-decoration: none;
+}
