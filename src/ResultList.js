@@ -14,7 +14,7 @@ render: function(){
         <li className="liResultList">
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>
-          <img className="imgResultList" src={this.props.estate.image}/>
+          <img className="imgResultList" src={this.props.estate.image[0]}/>
         </li>
       </Link>
     );
