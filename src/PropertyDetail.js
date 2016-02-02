@@ -1,5 +1,7 @@
 var React = require('react');
 var $ = require('jquery');
+var Link = require('react-router').Link;
+
 var PropertyDetail = React.createClass({
   getInitialState: function() {
     return {estate: {image: [], properties:[]}};
@@ -73,7 +75,9 @@ var PropertyDetail = React.createClass({
 
           <div className="row">
             <div className="col-xs-6">
-                <button type="button" className="btn btn-primary buttonMA">Make Appointment</button>
+             <div className="list-group list-group-horizontal">
+                <Link to="Appointment/AppointmentWhere" className="list-group-item active" >Make Appointment</Link>
+              </div>
             </div>
             <div className="col-xs-6">
                  <button type="button" className="btn btn-primary buttonLA">Loan Advice</button>
