@@ -20,6 +20,7 @@ ReactDOM.render(
      <Route path="Compare" component={Compare} />
      <Route path="ResultList" component={ResultList} />
      <Route path="PropertyDetail/:id" component={PropertyDetail} />
+     <Route path="Favorites" component={ResultList} />
     </Route>
   </Router>,
   document.getElementById('root')
