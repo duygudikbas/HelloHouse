@@ -123,7 +123,7 @@ var BasicSearch = React.createClass({
         $.get(url, function(data) {
             console.log(data);
             var doubles = data.map(function(num) {
-                return num.zip + "-" + num.name;
+                return num.zip + " " + num.name;
             });
             $(this.refs.location).autocomplete({
                 source: doubles
