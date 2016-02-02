@@ -10,7 +10,11 @@ var Search = require('./Search.js');
 var Compare = require('./Compare.js');
 var ResultList = require('./ResultList.js');
 var PropertyDetail = require('./PropertyDetail.js');
-          
+var Appointment = require('./Appointment.js');
+var AppointmentWhere = require('./AppointmentWhere.js');
+var AppointmentWhen = require('./AppointmentWhen.js');
+var AppointmentCompleted = require('./AppointmentCompleted.js');
+
 ReactDOM.render(
     <Router>
     <Route path="/" component={HelloBankApp}>
@@ -20,6 +24,11 @@ ReactDOM.render(
      <Route path="Compare" component={Compare} />
      <Route path="ResultList" component={ResultList} />
      <Route path="PropertyDetail/:id" component={PropertyDetail} />
+     <Route path="Appointment" component={Appointment}>
+        <Route path="AppointmentWhere" component={AppointmentWhere} />
+        <Route path="AppointmentWhen" component={AppointmentWhen} />
+        <Route path="AppointmentCompleted" component={AppointmentCompleted} />
+     </Route>
      <Route path="Favorites" component={ResultList} />
     </Route>
   </Router>,
