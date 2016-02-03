@@ -1,75 +1,138 @@
 var React = require('react');
+var $ = require('jquery');
+
+var PriceTableRows = React.createClass({
+  getInitialState: function() {
+  	console.log("locationPrimaryZip");
+  	console.log(this.props.locationPrimaryZip);
+    return {
+        estates:[]
+    };
+  },
+  componentDidMount: function() {
+      var url = "http://localhost:3000/cities?id="+1;
+      console.log("url");
+      console.log(url);
+      $.get(url, function(data) {
+	      this.setState({estates: data});
+	    }.bind(this), 'json');
+  },
+  render: function(){
+  	console.log(this.state.estates);
+
+  	var estatesPriceAptCenter = this.state.estates.map(function(estate){
+  		 		return  (<td key={estate.id}>{estate.priceDetail.priceAptCenter}</td>);
+  	});
+  	var estatesPriceHouseCenter = this.state.estates.map(function(estate){
+  		 		return  (<td key={estate.id}>{estate.priceDetail.priceAptCenter}</td>);
+  	});
+  	var estatesPriceAptOutOFCenter = this.state.estates.map(function(estate){
+  		 		return  (<td key={estate.id}>{estate.priceDetail.price_apt_out_of_center}</td>);
+  	});
+  	var estatesPriceHouseOutOFCenter = this.state.estates.map(function(estate){
+  		 		return  (<td key={estate.id}>{estate.priceDetail.price_house_out_of_center}</td>);
+  	});
+  	return(
+	    <tbody>
+
+		  		<tr  className="info">
+			     <td>Apt Centre</td>
+			      {estatesPriceAptCenter}
+			    </tr>
+			    <tr  className="danger">
+			      <td>House Centre</td>
+			   		{estatesPriceHouseCenter}
+			    </tr>
+			    <tr  className="info">
+			      <td>Apt Out Centre</td>
+			      {estatesPriceAptOutOFCenter}
+			    </tr>
+			    <tr  className="danger">
+			      <td>House Out Centre</td>
+			      {estatesPriceHouseOutOFCenter}
+			    </tr>
+		   </tbody>
+
+  	);
+  }
+});
+var PriceTable = React.createClass({
+	render: function(){
+		return(        
+			<div className="table-responsive" id="priceTable">
+          <table className="table table-hover">
+         <thead>
+	       <tr>
+	          <th></th>
+	          <th>{this.props.location.locationPrimary} - Rent Price</th>
+	          
+	        </tr>
+	     </thead>
+            <PriceTableRows  locationPrimaryZip={this.props.locationPrimaryZip} location={this.props.location}/>
+        </table>
+      </div>
+    );
+	}
+});
 
 var Compare = React.createClass({
+	getInitialState: function() {
+    return {location:{locationPrimary:"", locationSecondary:""},locationPrimaryZip:"",showTable:false, showColumnSecondary:true};
+  },
+  handleLocationPrimary: function(locationPrimary){
+  	var location = $.extend({}, this.state.location);
+  	this.state.showTable = true;
+    $('#searchForPrimary').on('autocompleteselect', function (e, ui) {
+        location.locationPrimary = ui.item.value;
+     		this.setState({location:location});
+    }.bind(this));	
+  },
+  handleLocationSecondary: function(locationSecondary){
+  	var location = $.extend({}, this.state.location);
+  		this.state.showColumnSecondary = true;
+    $('#searchForSecondary').on('autocompleteselect', function (e, ui) {
+
+        location.locationSecondary = ui.item.value;
+     		this.setState({location:location});
+    }.bind(this));	
+  },
+ componentDidMount: function() {
+    var url = "http://localhost:3000/cities";
+    $.get(url, function(data) {
+        var doubles = data.map(function(num) {
+            return num.zip + " " + num.name;
+        }.bind(this));
+        $(this.refs.locationPrimary).autocomplete({
+            source: doubles
+        });
+        $(this.refs.locationSecondary).autocomplete({
+            source: doubles
+        });
+    }.bind(this), 'json');
+},
 render: function(){
     return(
-       <div className="container compare"> 
-       <form className="form-horizontal" >
-       		 <div className="form-group">
-			    < input type = 'text' ref = 'autocomplete'  placeholder="Enter location"/ >
-			    <p>Compare To</p>
-			    < input type = 'text' ref = 'autocomplete'  placeholder="Compare location"/ >
-			 </div>
-
- 			<div className="form-group">
-	       		<div className="dropdown">
-				  <button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Currencies
-				  <span className="caret"></span></button>
-				  <ul className="dropdown-menu">
-				    <li><a href="#">EUR</a></li>
-				    <li><a href="#">USD</a></li>
-				    <li><a href="#">GBP</a></li>
-				  </ul>
-				</div>
-			</div>
-			<div className="form-group">
-	       <div className="table-responsive">   
-	          <table className="table table-hover">
-			    <thead>
-			      <tr>
-			        <th>Monthly Rent</th>
-			        <th>Price</th>
-			        <th>Range</th>
-			      </tr>
-			    </thead>
-			    <tbody>
-			     <tr className="info">
-			         <td></td>
-			        <td>Brussels</td>
-			        <td>Liege</td>
-			
-			      </tr>
-			      <tr className="info">
-			       <td>Centre</td>
-			        <td>800</td>
-			        <td>800-900</td>
-			
-			      </tr>
-			      <tr  className="info">
-			       <td>O Centre</td>
-			        <td>600</td>
-			        <td>600 - 800</td>
-
-			      </tr>
-			      <tr  className="danger">
-			        <td>Centre</td>
-			        <td>1400</td>
-			        <td>1200 - 1500</td>
-			   
-			      </tr>
-			       <tr  className="danger">
-			         <td>O Centre</td>
-			         <td>1100</td>
-			        <td>1100 - 1300</td>
-		
-			      </tr>
-			    </tbody>
-			  </table>
-			  <p><em>Blue</em> indicates: Appartment; <em>Pink</em> indicates: House; </p>
-			  </div>
-			  </div>
-			</form>
+      <div className="container compare"> 
+				<div className="row">
+         <div className="col-xs-offset-1 col-xs-3">
+              <label> Location: < /label>  
+         </div>
+          <div className="col-xs-6">
+              <input type='text' id="searchForPrimary" onClick={this.handleLocationPrimary} placeholder="Enter location" ref="locationPrimary" / >
+           </div>
         </div>
+
+        <div className="row">
+         <div className="col-xs-offset-1 col-xs-3">
+              <label> Compare: < /label>  
+         </div>
+          <div className="col-xs-6">
+              <input type='text' id="searchForSecondary" onClick={this.handleLocationSecondary}  placeholder="City For Comparison" ref="locationSecondary" / >
+           </div>
+        </div>
+        {this.state.showTable ? <PriceTable locationPrimaryZip={this.state.locationPrimaryZip} location = {this.state.location} showColumnSecondary = {this.state.showColumnSecondary}/> : null}
+        
+      </div>
     );
   }
 });

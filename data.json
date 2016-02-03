@@ -13017,7 +13017,13 @@
     {
       "id": 1,
       "zip": "9420",
-      "name": "Aaigem"
+      "name": "Aaigem",
+      "priceDetail": {
+        "priceAptCenter": "3333€",
+        "price_apt_out_of_center": "3333€",
+        "priceHouseCenter": "3333€",
+        "price_house_out_of_center": "3333€"
+      }
     },
     {
       "id": 2,
@@ -27262,7 +27268,13 @@
     {
       "id": 2850,
       "zip": "2070",
-      "name": "Zwijndrecht"
+      "name": "Zwijndrecht",
+      "priceDetail": {
+        "priceAptCenter": "3333€",
+        "price_apt_out_of_center": "3333€",
+        "priceHouseCenter": "3333€",
+        "price_house_out_of_center": "3333€"
+      }
     }
   ],
   "favorites": []
