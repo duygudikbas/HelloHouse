@@ -13022,22 +13022,46 @@
     {
       "id": 2,
       "zip": "8511",
-      "name": "Aalbeke"
+      "name": "Aalbeke",
+      "priceDetail": {
+        "priceAptCenter": "2222€",
+        "price_apt_out_of_center": "2222€",
+        "priceHouseCenter": "2222€",
+        "price_house_out_of_center": "2222€"
+      }
     },
     {
       "id": 3,
       "zip": "9300",
-      "name": "Aalst"
+      "name": "Aalst",
+      "priceDetail": {
+        "priceAptCenter": "5555€",
+        "price_apt_out_of_center": "5555€",
+        "priceHouseCenter": "5555€",
+        "price_house_out_of_center": "5555€"
+      }
     },
     {
       "id": 4,
       "zip": "3800",
-      "name": "Aalst (Limb.)"
+      "name": "Aalst (Limb.)",
+      "priceDetail": {
+        "priceAptCenter": "8888€",
+        "price_apt_out_of_center": "8888€",
+        "priceHouseCenter": "8888€",
+        "price_house_out_of_center": "8888€"
+      }
     },
     {
       "id": 5,
       "zip": "9880",
-      "name": "Aalter"
+      "name": "Aalter",
+      "priceDetail": {
+        "priceAptCenter": "3333€",
+        "price_apt_out_of_center": "3333€",
+        "priceHouseCenter": "3333€",
+        "price_house_out_of_center": "3333€"
+      }
     },
     {
       "id": 6,

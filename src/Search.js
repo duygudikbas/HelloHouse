@@ -66,7 +66,7 @@ $('#garden').prop('checked', false);
             <div>
                  <div className="row">
                  <div className="col-xs-12">
-                    <label htmlFor = "usr" > Room: < /label> 
+                    <label> Room: < /label> 
                  </div> 
                 </div> 
                 <div className="row">
