@@ -19,7 +19,6 @@ render: function(){
   }
 });
 
-
 var Warning = React.createClass({
   render: function(){
     return (
@@ -55,10 +54,15 @@ var ResultList = React.createClass({
       this.setState({favorite : false});
     }
 
-    if (index == 0){
+    if (index >= 0){
       //favorites
       $.get("http://localhost:3000/favorites", function(favorites) {
-        $.get("http://estates-api.herokuapp.com/estates", function(data) {
+        var urlFavorites = "http://estates-api.herokuapp.com/estates?id=";
+        var favList = favorites.map(function(favory){
+          return favory.id;
+        }).join('&id=');
+        urlFavorites += favList;
+        $.get(urlFavorites, function(data) {
           this.setState({estates: data});
         }.bind(this), 'json');
       }.bind(this), 'json');
@@ -68,7 +72,6 @@ var ResultList = React.createClass({
       this.setState({estates: data});
     }.bind(this), 'json');
     }
-
   },
 
   filter : function(estate){
@@ -108,7 +111,7 @@ var ResultList = React.createClass({
          <h1>Propositions</h1>
          <NumberWarning numberWarning = {numberWarning}/>
          <ul className="ulResultList">
-         {resultElems }
+          {resultElems }
          </ul> 
       </div>
     );

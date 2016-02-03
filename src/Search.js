@@ -56,64 +56,113 @@ var BasicSearch = React.createClass({
     render: function() {
         var advancedSearch;
         if (this.state.open) {
-            advancedSearch = < div >
-            < div className = "form-group" >
-            < div className = "form-group row" >
-                < label htmlFor = "usr"  className="col-xs-4"> Room: < /label> 
-                < input type = "number" id = "minRoom" placeholder = "min"  className="col-xs-3" ref="minRoom"/ >
-                < label htmlFor = "usr"  className="col-xs-2"> To: < /label> 
-                < input type = "number" id = "maxRoom" className="col-xs-3" placeholder = "max"  ref="maxRoom"/ >
-            < /div> 
-            < /div> 
-            < div className = "form-group row" >
-                < label htmlFor = "usr" className="col-xs-4" > Surface: < /label> 
-                < input type = "number" id = "minSurface" className="col-xs-3" placeholder = "min"  ref="minSurface"/ >
-                < label htmlFor = "usr" className="col-xs-2"> To: < /label> 
-                < input type = "number" id = "maxSurface" placeholder = "max"  className="col-xs-3" ref="maxSurface"/ >
-            < /div> 
-            < div className = "form-group row" >
-                < input className="col-xs-1" type = "checkbox" name = "garden" value = "garden"  ref="garden"/ >
-                < label className="col-xs-3" > Garden < /label> 
-                < input type = "checkbox" name = "garage" r value = "garage" className="col-xs-1"  ref="garage"/ >
-                < label className="col-xs-3" > Garage < /label> 
-                < input type = "checkbox" name = "pool"  value = "pool"  className="col-xs-1" ref="pool"/ >
-                < label  className="col-xs-3"> pool  < /label> 
-            < /div>
-            </div > ;
+            advancedSearch = 
+            <div>
+                 <div className="row">
+                 <div className="col-xs-12">
+                    <label htmlFor = "usr" > Room: < /label> 
+                 </div> 
+                </div> 
+                <div className="row">
+                    <div className="col-xs-offset-1 col-xs-3">
+                           <input type="number" className="roomNumber" id="minRoom" placeholder="min"  ref="minRoom"/>
+                    </div>
+                     <div className="col-xs-2">
+                          <label> To: < /label> 
+                    </div>
+                     <div className="col-xs-4">
+                          <input type="number" className="roomNumber" id="maxRoom" placeholder="max"  ref="maxRoom"/>
+                    </div>
+                </div> 
+
+
+
+                <div className="row">
+                    <div className="col-xs-12">
+                        <label> Surface: </label> 
+                    </div>
+                </div>
+                 <div className="row">
+                    <div className="col-xs-offset-1 col-xs-3">
+                          <input type = "number" className="surface" id = "minSurface" placeholder = "min"  ref="minSurface"/>
+                    </div>
+                     <div className="col-xs-2">
+                          <label> To: < /label> 
+                    </div>
+                     <div className="col-xs-4">
+                          <input type="number" className="surface" id="maxSurface" placeholder="max" ref="maxSurface"/>
+                    </div>
+                </div> 
+
+                <div className="row">
+                <div className="col-xs-5">
+                    <input type = "checkbox" name = "garden" value = "garden"  ref="garden"/>
+                    <label> Garden < /label> 
+                </div>
+                <div className="col-xs-4">
+                    <input type = "checkbox" name = "garage" value = "garage"  ref="garage"/>
+                    <label> Garage < /label> 
+                </div>
+                <div className="col-xs-3">
+                    <input type = "checkbox" name = "pool"  value = "pool" ref="pool"/>
+                    <label> pool  < /label> 
+                </div>
+                </div>
+            </div> ;
         } else {
             advancedSearch = "";
         }
         return ( 
-            <div className="masterSearch">
+            <div className="container search">   
 
-            < div className = "search" >
-        
-            < div className = "row form-group topSearch" >
-              < label htmlFor = "usr" className="col-xs-4"  > Type: < /label> 
-              < input type = "checkbox" name = "Appartment" value = "Appartment"  className="col-xs-1 appartment" ref="appartment"/ >
-              < label   className="col-xs-4" > Appartment < /label> 
-              < input type = "checkbox"   name = "House" value = "House"  className="col-xs-1" ref="house"/ >
-              < label  className="col-xs-1 marginright" > House < /label> 
+                <div className="row">
+                 <div className="col-xs-offset-1 col-xs-6">
+                      <input type = "checkbox" name="Appartment" value="Appartment" ref="appartment"/ >
+                      <label> Appartment </label>
+                    </div>
+                    <div className="col-xs-5"> 
+                      <input type = "checkbox"   name = "House" value = "House" ref="house"/ >
+                      <label> House </label> 
+                    </div>
+                </div> 
 
-            < /div> 
-            < div className = "row form-group" >
-              < label htmlFor = "usr" className="col-xs-4"  > Location: < /label> 
-              < input type = 'text' placeholder = "Enter location" className="col-xs-8" ref="location" / >
-            < /div>
+                <div className="row">
+                 <div className="col-xs-12">
+                      <label> Location: < /label> 
+                 </div>
+                </div>
 
-            < div className = " row form-group" >
-            < label htmlFor = "usr" className="col-xs-4"  > Price: < /label> 
-            < input type = "number" id = "minPrice" placeholder = "min" className="col-xs-3" ref="minPrice"/ >
+                <div className="row">
+                  <div className="col-xs-offset-1 col-xs-11">
+                      <input type='text' id="searchAutoComplete" placeholder="Enter location" ref="location" / >
+                   </div>
+                </div>
 
-            < label htmlFor = "usr" className="col-xs-2"> To: < /label> 
-            < input type = "number" id = "max" className="col-xs-3" placeholder =  "max"  ref="maxPrice"/ >
-            < /div> < div className = "form-group" >
-            < button onClick = {
-                this.handle
-        } > Advanced Search < /button> {
-                advancedSearch
-            } 
-            < Link to = "/ResultList" onClick={this.setFilter}> Search < /Link> < /div> < /div>
+
+               <div className="row">
+                <div className="col-xs-12">
+                    <label>Price:</label> 
+                </div>
+                </div> 
+
+                 <div className="row">
+                     <div className="col-xs-offset-1 col-xs-9">
+                        <input type="number" id = "minPrice" placeholder="min" ref="minPrice"/ >
+                     </div>
+                    <div className="col-xs-4">
+                        <label>To:</label> 
+                    </div>
+                </div> 
+
+                <div className="row">
+                    <div className="col-xs-offset-1 col-xs-12">
+                        <input type="number" id="max" placeholder= "max"  ref="maxPrice"/ >
+                    </div>
+                </div>
+                <div>
+                    <button className="btn btn_default advancedBtn" onClick = {this.handle} > Advanced Search < /button> {advancedSearch} 
+                        <Link to = "/ResultList" className="btn btn_default searchBtn" onClick={this.setFilter}> Search < /Link> 
+                </div> 
             </div>
         );
     },
