@@ -1,6 +1,7 @@
 .search {
 color:white;
-position: relative;
+font-size:22px;
+    margin-top: 35px;
 }
 .appartment{
   display: block;
@@ -16,4 +17,27 @@ position: relative;
 
 #searchAutoComplete {
   color: black
+}
+
+.search input {
+	color:black;
+	font-size:18px;;
+}
+
+.roomNumber {
+	    width: 60px;
+}
+
+.surface {
+	    width: 70px;
+}
+
+.btn_default.advancedBtn {
+	margin-top: 6px;
+	font-size:15px;
+}
+
+.btn_default.searchBtn {
+      font-size: 13px;
+  margin-top: 6px;
 }
