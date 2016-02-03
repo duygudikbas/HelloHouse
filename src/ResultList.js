@@ -2,8 +2,29 @@ var React = require('react');
 var $ = require('jquery');
 var Link = require('react-router').Link
 
+var RemoveFromFavoritesButton = React.createClass({
+  removeFromFavorites : function(event){
+    event.preventDefault();
+    var urlRemove = "http://localhost:3000/favorites/" + this.props.id;
+    $.ajax({
+        url: urlRemove,
+        type: 'DELETE',
+        success: function(result) {
+            // Do something with the result
+        }
+    });
+  },
+
+  render: function(){
+    return(
+       <button type="button" className="btn btn_default" onClick={this.removeFromFavorites}>Remove from Favourites</button>
+      )
+  }
+});
+
 var AResult = React.createClass({
 render: function(){
+    var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     if (price) {price += " €"};
@@ -13,17 +34,17 @@ render: function(){
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>
           <img className="imgResultList" src={this.props.estate.image[0]}/>
+          {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id}/></span> : null}
         </li>
       </Link>
     );
   }
 });
 
-
 var Warning = React.createClass({
   render: function(){
     return (
-        <p>May be could you adapt your <Link to="/Search" >Search</Link></p>
+        <p>The list contains too many results. <Link to="/Search" id="refineCriteriaAction">Please refine your criteria</Link></p>
       );}
   });
 
@@ -47,27 +68,21 @@ var ResultList = React.createClass({
   },
 
   componentDidMount: function() {
-    console.log("called by : ");
-    console.log(this.props.location.pathname);
     var index = this.props.location.pathname.indexOf("Favorites");
-    console.log("indexOf: "+ index);
 
     if (index >= 0){
-      console.log("favorites : true");
       this.setState({favorite : true});
     }else {
-      console.log("favorites : false");
       this.setState({favorite : false});
     }
-    console.log("this.state");
-    console.log(this.state);
 
-    if (index == 0){
+    if (index >= 0){
       //favorites
       $.get("http://localhost:3000/favorites", function(favorites) {
         var urlFavorites = "http://estates-api.herokuapp.com/estates?id=";
-        var favList = favorites.join('&id=');
-        console.log("favList : "+favList);
+        var favList = favorites.map(function(favory){
+          return favory.id;
+        }).join('&id=');
         urlFavorites += favList;
         $.get(urlFavorites, function(data) {
           this.setState({estates: data});
@@ -106,12 +121,12 @@ var ResultList = React.createClass({
   },
 
   render: function(){
-    console.log(this.state.estates);
+    var index = this.props.location.pathname.indexOf("Favorites");
     var filteredEstates = this.state.estates.filter(this.filter);
     var numberWarning = filteredEstates.length;
     var resultElems = filteredEstates.map(function(estate) {
       return (
-        <AResult key={estate.id} estate={estate} />
+        <AResult key={estate.id} estate={estate} favFlag={index}/>
        );
     }); 
     return(
@@ -119,7 +134,7 @@ var ResultList = React.createClass({
          <h1>Propositions</h1>
          <NumberWarning numberWarning = {numberWarning}/>
          <ul className="ulResultList">
-         {resultElems }
+          {resultElems}
          </ul> 
       </div>
     );

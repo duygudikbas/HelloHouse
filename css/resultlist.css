@@ -8,7 +8,7 @@
 }
 
 .liResultList {
-  /*position: relative;*/
+  position: relative;
   border: 2px solid green;
   margin: 5px;
   display: inline-block;
@@ -40,4 +40,16 @@
 .titleResultList{
   display: block;
   text-align: center; 
+}
+
+.removeFromFavorites{
+   display:block;
+  position: absolute;
+  bottom : 20px;
+  right: 50px;
+  left : 50px;
+
+  width: 20px;
+  height: 19px;
+  background: red;
 }
