@@ -12,12 +12,12 @@ var HelloBankApp = React.createClass({
               maxRoom : null,
               minSurface : null,
               maxSurface : null,
-              garden : true,
-              garage : true,
-              pool : true, 
+              garden : false,
+              garage : false,
+              pool : false, 
               location : null,
-              house : true,
-              appartment : true
+              house : false,
+              appartment : false
           }
     };
   },  
