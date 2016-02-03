@@ -2,6 +2,27 @@ var React = require('react');
 var $ = require('jquery');
 var Link = require('react-router').Link
 
+var RemoveFromFavoritesButton = React.createClass({
+
+  removeFromFavorites : function(event){
+    event.preventDefault();
+    var urlRemove = "http://localhost:3000/favorites/" + this.props.id;
+    $.ajax({
+        url: urlRemove,
+        type: 'DELETE',
+        success: function(result) {
+            // Do something with the result
+        }
+    });
+  },
+
+  render: function(){
+    return(
+       <button type="button" className="btn btn_default" onClick={this.removeFromFavorites}>Remove from Favourites</button>
+      )
+  }
+});
+
 var AResult = React.createClass({
 render: function(){
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
@@ -13,6 +34,8 @@ render: function(){
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>
           <img className="imgResultList" src={this.props.estate.image[0]}/>
+          <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id}/></span>
+          
         </li>
       </Link>
     );

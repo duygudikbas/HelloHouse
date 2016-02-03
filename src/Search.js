@@ -24,6 +24,7 @@ var BasicSearch = React.createClass({
         var appartment = this.refs.appartment.checked;
 
         if (this.state.open){
+            console.log("Je suis là !");
             var minRoom = this.refs.minRoom.value;
             var maxRoom = this.refs.maxRoom.value; 
             var minSurface = this.refs.minSurface.value;

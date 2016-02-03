@@ -27265,21 +27265,5 @@
       "name": "Zwijndrecht"
     }
   ],
-  "favorites": [
-    {
-      "id": 1
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 4
-    }
-  ]
+  "favorites": []
 }
