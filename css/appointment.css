@@ -3,7 +3,10 @@
 }
 
 #datepickerInput{
-  width: 175px;
+  /*width: 175px;
+        margin-right: 47px;*/
     display: inline;
-        margin-right: 47px;
+    width: 110px;
+    margin-right: 16px;
+    margin-left: 16px;
 }
