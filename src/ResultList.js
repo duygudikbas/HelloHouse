@@ -3,7 +3,6 @@ var $ = require('jquery');
 var Link = require('react-router').Link
 
 var RemoveFromFavoritesButton = React.createClass({
-
   removeFromFavorites : function(event){
     event.preventDefault();
     var urlRemove = "http://localhost:3000/favorites/" + this.props.id;
@@ -25,6 +24,7 @@ var RemoveFromFavoritesButton = React.createClass({
 
 var AResult = React.createClass({
 render: function(){
+    var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     if (price) {price += " €"};
@@ -34,8 +34,7 @@ render: function(){
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>
           <img className="imgResultList" src={this.props.estate.image[0]}/>
-          <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id}/></span>
-          
+          {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id}/></span> : null}
         </li>
       </Link>
     );
@@ -122,11 +121,12 @@ var ResultList = React.createClass({
   },
 
   render: function(){
+    var index = this.props.location.pathname.indexOf("Favorites");
     var filteredEstates = this.state.estates.filter(this.filter);
     var numberWarning = filteredEstates.length;
     var resultElems = filteredEstates.map(function(estate) {
       return (
-        <AResult key={estate.id} estate={estate} />
+        <AResult key={estate.id} estate={estate} favFlag={index}/>
        );
     }); 
     return(
@@ -134,7 +134,7 @@ var ResultList = React.createClass({
          <h1>Propositions</h1>
          <NumberWarning numberWarning = {numberWarning}/>
          <ul className="ulResultList">
-          {resultElems }
+          {resultElems}
          </ul> 
       </div>
     );
