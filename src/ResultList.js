@@ -19,7 +19,6 @@ render: function(){
   }
 });
 
-
 var Warning = React.createClass({
   render: function(){
     return (
@@ -57,21 +56,14 @@ var ResultList = React.createClass({
       console.log("favorites : false");
       this.setState({favorite : false});
     }
-    console.log("this.state");
-    console.log(this.state);
 
     if (index >= 0){
       //favorites
       $.get("http://localhost:3000/favorites", function(favorites) {
         var urlFavorites = "http://estates-api.herokuapp.com/estates?id=";
-        console.log("favorites : ");
-        console.log(favorites);
         var favList = favorites.map(function(favory){
-          console.log("Je suis là 2");
           return favory.id;
         }).join('&id=');
-
-        console.log("favList : "+favList);
         urlFavorites += favList;
         $.get(urlFavorites, function(data) {
           this.setState({estates: data});

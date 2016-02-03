@@ -19,6 +19,26 @@ var PropertyDetail = React.createClass({
         "http://www.google.com/maps/place/"+this.state.estate.coordinates
     );
   },
+
+  addToFavorites: function(id){
+    var newFav = {
+      id : this.props.params.id
+    }
+    var urlFav = "http://localhost:3000/favorites";
+
+    $.ajax({
+      type: "POST",
+      dataType: "json",
+      url: urlFav,
+      data: newFav,
+     success: function( response ) 
+          { 
+            console.log("add done");
+          }   
+    });
+
+  },
+
   render: function(){
     return(
        <div className="container propertyDetail">
@@ -78,7 +98,7 @@ var PropertyDetail = React.createClass({
               <Link to="Appointment/AppointmentWhere" className="btn btn_default" >Make Appointment</Link>
             </div>
             <div className="col-xs-6">
-                 <button type="button" className="btn btn_default">Add to Favourites</button>
+              <button type="button" className="btn btn_default" onClick={this.addToFavorites}>Add to Favourites</button>
             </div>
           </div>
 
