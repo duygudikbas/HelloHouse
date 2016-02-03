@@ -69,7 +69,6 @@ var PriceTableRows = React.createClass({
 
   	return(
 	    <tbody>
-
 		  		<tr  className="info">
 			     <td>Apt Centre</td>
 				     <td >{this.state.primary[0].priceDetail.priceAptCenter}</td>
@@ -91,25 +90,6 @@ var PriceTableRows = React.createClass({
 				    <td >{this.state.secondary[0].priceDetail.price_house_out_of_center}</td>
           </tr>
 		   </tbody>
-
-  		  		<tr  className="info">
-  			     <td>Apt Centre</td>
-  			      {estatesPriceAptCenter}
-  			    </tr>
-  			    <tr  className="danger">
-  			      <td>House Centre</td>
-  			   		{estatesPriceHouseCenter}
-  			    </tr>
-  			    <tr  className="info">
-  			      <td>Apt Out Centre</td>
-  			      {estatesPriceAptOutOFCenter}
-  			    </tr>
-  			    <tr  className="danger">
-  			      <td>House Out Centre</td>
-  			      {estatesPriceHouseOutOFCenter}
-  			    </tr>
-  		  </tbody>
-      </div>
   	);
   }
 });

@@ -6,10 +6,6 @@
   color:black;
 }
 
-.compare th{
-  color:white;
-}
-
 .compare .row {
       margin-bottom: 10px;
 }
@@ -18,13 +14,12 @@
 	margin-top: 10px;
 }
 
-}
 #searchForPrimary {
-  color: black
+  color: black;
 }
 
 #searchForSecondary {
-  color: black
+  color: black;
 }
 
 

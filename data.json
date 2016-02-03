@@ -13017,7 +13017,13 @@
     {
       "id": 1,
       "zip": "9420",
-      "name": "Aaigem"
+      "name": "Aaigem",
+      "priceDetail": {
+        "priceAptCenter": "5555€",
+        "price_apt_out_of_center": "5555€",
+        "priceHouseCenter": "5555€",
+        "price_house_out_of_center": "5555€"
+      }
     },
     {
       "id": 2,
