@@ -5,7 +5,9 @@ var Link = require('react-router').Link;
 var AppointmentWhere = React.createClass({
   handleUserAppointmentWhere: function() {
     this.props.appointmentDetailInputWhere(this.refs.autocomplete.value);
+    this.props.handleAppointmentStep(1);
   },
+
   componentDidMount: function() {
     $(this.refs.autocomplete).val( this.props.where );
       var url = "http://localhost:3000/cities";

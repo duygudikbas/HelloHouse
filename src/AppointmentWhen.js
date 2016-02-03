@@ -4,7 +4,11 @@ var Link = require('react-router').Link;
 
 var AppointmentWhen = React.createClass({
   handleAppointmentWhen:function(){
-     this.props.appointmentDetailInputWhen(this.refs.date.value);
+    this.props.appointmentDetailInputWhen(this.refs.date.value);
+    this.props.handleAppointmentStep(1);
+  },
+  handleAppointmentPrevious: function(){
+    this.props.handleAppointmentStep(-1);
   },
   handleDatePicker: function(){
     console.log("handleDatePicker");
@@ -43,7 +47,7 @@ var AppointmentWhen = React.createClass({
             <div className="form-group">
                 <div className="form-group">
                   <div id="sandbox-container">
-                    <Link to="Appointment/AppointmentWhere" className="btn btn_default" >Previous</Link>  
+                    <Link to="Appointment/AppointmentWhere" className="btn btn_default" onClick={this.handleAppointmentPrevious}>Previous</Link>  
                     <input type="input" id="datepickerInput" type="text" ref="date" placeholder="Date app." className="form-control" onClick={this.handleDatePicker}/>
                     <Link to="Appointment/AppointmentCompleted" className="btn btn_default" onClick={this.handleAppointmentWhen}>Next</Link>
                   </div>

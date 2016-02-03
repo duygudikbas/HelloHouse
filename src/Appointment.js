@@ -3,8 +3,12 @@ var $ = require('jquery');
 
 var Appointment = React.createClass({
   getInitialState: function() {
-    return {appointmentDetail: {where:"", when:""}};
+    return {appointmentDetail: {where:"", when:""}, stepCount:1};
   }, 
+  handleAppointmentStep: function(stepCount) {
+    var stepCountState = this.state.stepCount;
+    this.setState({ stepCount : stepCountState += stepCount });
+  },
   onInputAppointmentWhere: function(where) {
     this.setState({appointmentDetail: {where: where}});
   },
@@ -25,11 +29,13 @@ var Appointment = React.createClass({
                appointmentDetailInputWhere: this.onInputAppointmentWhere, 
                appointmentDetailInputWhen:this.onInputAppointmentWhen,
                when:this.state.appointmentDetail.when,
-               where:this.state.appointmentDetail.where
+               where:this.state.appointmentDetail.where,
+               handleAppointmentStep: this.handleAppointmentStep
             })}
+            <p id="stepCount">Step&nbsp;<span>{ this.state.stepCount }</span>/3</p>
           </div>
         </div>
-         </div>
+      </div>
     );
   }
 });
