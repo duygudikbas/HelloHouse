@@ -43,8 +43,9 @@ var AppointmentWhen = React.createClass({
             <div className="form-group">
                 <div className="form-group">
                   <div id="sandbox-container">
-                      <input type="input" id="datepickerInput" type="text" ref="date" placeholder="Appointment Date" className="form-control" onClick={this.handleDatePicker}/>
-                  <Link to="Appointment/AppointmentCompleted" className="btn btn_default" onClick={this.handleAppointmentWhen}>Next</Link>
+                    <Link to="Appointment/AppointmentWhere" className="btn btn_default" >Previous</Link>  
+                    <input type="input" id="datepickerInput" type="text" ref="date" placeholder="Date app." className="form-control" onClick={this.handleDatePicker}/>
+                    <Link to="Appointment/AppointmentCompleted" className="btn btn_default" onClick={this.handleAppointmentWhen}>Next</Link>
                   </div>
                 </div>
             </div>
