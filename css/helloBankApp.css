@@ -98,3 +98,17 @@ body {
   color:#F3843E;
   text-decoration: none;
 }
+
+.homeLink {
+  background-color: transparent;
+  color: #F3843E;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 230px;
+}
+
+.homeLink:hover {
+  color: #F3843E;
+  text-decoration: none;
+}
+}

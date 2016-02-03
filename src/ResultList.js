@@ -182,7 +182,8 @@ var ResultList = React.createClass({
     }.bind(this)); 
 
     return(
-      <div className="container">        
+      <div className="container">   
+        <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>     
          { index > -1 ? <h1>Favorites</h1> : <h1>Propositions</h1>}
          { numberWarning > 0 ? <div><NumberWarning numberWarning = {numberWarning}/><ul className="ulResultList">{resultElems}</ul></div> : <EmptyResults/> }
       </div>

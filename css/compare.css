@@ -14,6 +14,11 @@
       margin-bottom: 10px;
 }
 
+.row:first-child{
+	margin-top: 10px;
+}
+
+}
 #searchForPrimary {
   color: black
 }
@@ -21,6 +26,8 @@
 #searchForSecondary {
   color: black
 }
+
+
 
 
 

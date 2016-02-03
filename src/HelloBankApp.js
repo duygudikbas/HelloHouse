@@ -28,7 +28,6 @@ var HelloBankApp = React.createClass({
   render: function(){
     return(
       <div className="container app"> 
-        <Link to="/" className="btn btn_default"><i class="fa fa-home"></i>&nbsp; Home</Link>
           { React.cloneElement(this.props.children, {
             filter: this.state.filter, initiateFilter: this.initiateFilter
           })}

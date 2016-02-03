@@ -1,5 +1,6 @@
 var React = require('react');
 var $ = require('jquery');
+var Link = require('react-router').Link;
 
 var PriceTableRows = React.createClass({
   getInitialState: function() {
@@ -33,42 +34,42 @@ var PriceTableRows = React.createClass({
   		 		return  (<td key={estate.id}>{estate.priceDetail.price_house_out_of_center}</td>);
   	});
   	return(
-	    <tbody>
+      <div>
+  	    <tbody>
 
-		  		<tr  className="info">
-			     <td>Apt Centre</td>
-			      {estatesPriceAptCenter}
-			    </tr>
-			    <tr  className="danger">
-			      <td>House Centre</td>
-			   		{estatesPriceHouseCenter}
-			    </tr>
-			    <tr  className="info">
-			      <td>Apt Out Centre</td>
-			      {estatesPriceAptOutOFCenter}
-			    </tr>
-			    <tr  className="danger">
-			      <td>House Out Centre</td>
-			      {estatesPriceHouseOutOFCenter}
-			    </tr>
-		   </tbody>
-
+  		  		<tr  className="info">
+  			     <td>Apt Centre</td>
+  			      {estatesPriceAptCenter}
+  			    </tr>
+  			    <tr  className="danger">
+  			      <td>House Centre</td>
+  			   		{estatesPriceHouseCenter}
+  			    </tr>
+  			    <tr  className="info">
+  			      <td>Apt Out Centre</td>
+  			      {estatesPriceAptOutOFCenter}
+  			    </tr>
+  			    <tr  className="danger">
+  			      <td>House Out Centre</td>
+  			      {estatesPriceHouseOutOFCenter}
+  			    </tr>
+  		  </tbody>
+      </div>
   	);
   }
 });
 var PriceTable = React.createClass({
 	render: function(){
 		return(        
-			<div className="table-responsive" id="priceTable">
-          <table className="table table-hover">
-         <thead>
-	       <tr>
-	          <th></th>
-	          <th>{this.props.location.locationPrimary} - Rent Price</th>
-	          
-	        </tr>
-	     </thead>
-            <PriceTableRows  locationPrimaryZip={this.props.locationPrimaryZip} location={this.props.location}/>
+			<div className="table-responsive" id="priceTable"> 
+        <table className="table table-hover">
+          <thead>
+	         <tr>
+	           <th></th>
+	           <th>{this.props.location.locationPrimary} - Rent Price</th>
+	           </tr>
+	        </thead>
+          <PriceTableRows  locationPrimaryZip={this.props.locationPrimaryZip} location={this.props.location}/>
         </table>
       </div>
     );
@@ -113,6 +114,7 @@ var Compare = React.createClass({
 render: function(){
     return(
       <div className="container compare"> 
+        <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>
 				<div className="row">
          <div className="col-xs-offset-1 col-xs-3">
               <label> Location: < /label>  

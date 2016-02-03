@@ -1,5 +1,6 @@
 var React = require('react');
 var $ = require('jquery');
+var Link = require('react-router').Link;
 
 var Appointment = React.createClass({
   getInitialState: function() {
@@ -21,18 +22,22 @@ var Appointment = React.createClass({
     console.log("this.state.appointmentDetail");
     console.log(this.state.appointmentDetail);
     return(
-      <div className="container appointment">        
-        <div className="panel panel-default">
-          <div className="panel-heading">Appointment</div>
-          <div className="panel-body">
-            { React.cloneElement(this.props.children, {
-               appointmentDetailInputWhere: this.onInputAppointmentWhere, 
-               appointmentDetailInputWhen:this.onInputAppointmentWhen,
-               when:this.state.appointmentDetail.when,
-               where:this.state.appointmentDetail.where,
-               handleAppointmentStep: this.handleAppointmentStep
-            })}
-            <p id="stepCount">Step&nbsp;<span>{ this.state.stepCount }</span>/3</p>
+      <div>
+        <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>    
+        <div className="container appointment">    
+   
+          <div className="panel panel-default">
+            <div className="panel-heading">Appointment</div>
+            <div className="panel-body">
+              { React.cloneElement(this.props.children, {
+                 appointmentDetailInputWhere: this.onInputAppointmentWhere, 
+                 appointmentDetailInputWhen:this.onInputAppointmentWhen,
+                 when:this.state.appointmentDetail.when,
+                 where:this.state.appointmentDetail.where,
+                 handleAppointmentStep: this.handleAppointmentStep
+              })}
+              <p id="stepCount">Step&nbsp;<span>{ this.state.stepCount }</span>/3</p>
+            </div>
           </div>
         </div>
       </div>
