@@ -47,8 +47,6 @@ var ResultList = React.createClass({
   },
 
   componentDidMount: function() {
-    console.log("called by : ");
-    console.log(this.props.location.pathname);
     var index = this.props.location.pathname.indexOf("Favorites");
     console.log("indexOf: "+ index);
 
@@ -62,11 +60,17 @@ var ResultList = React.createClass({
     console.log("this.state");
     console.log(this.state);
 
-    if (index == 0){
+    if (index >= 0){
       //favorites
       $.get("http://localhost:3000/favorites", function(favorites) {
         var urlFavorites = "http://estates-api.herokuapp.com/estates?id=";
-        var favList = favorites.join('&id=');
+        console.log("favorites : ");
+        console.log(favorites);
+        var favList = favorites.map(function(favory){
+          console.log("Je suis là 2");
+          return favory.id;
+        }).join('&id=');
+
         console.log("favList : "+favList);
         urlFavorites += favList;
         $.get(urlFavorites, function(data) {
@@ -119,7 +123,7 @@ var ResultList = React.createClass({
          <h1>Propositions</h1>
          <NumberWarning numberWarning = {numberWarning}/>
          <ul className="ulResultList">
-         {resultElems }
+          {resultElems }
          </ul> 
       </div>
     );
