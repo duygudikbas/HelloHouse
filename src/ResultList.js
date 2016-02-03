@@ -64,6 +64,17 @@ var NumberWarning = React.createClass({
   }
 });
 
+var EmptyResults = React.createClass({
+  render: function(){
+    return(
+      <div>
+        <p>We are sorry, but there are no results for these criterias</p>
+
+      </div>
+    );
+  }
+});
+
 var ResultList = React.createClass({
   getInitialState: function() {
     return {estates: [], favorite : false, numberToSee : 0};
@@ -100,10 +111,15 @@ var ResultList = React.createClass({
 
   handleRemoveFavorite: function(id) {
     var favorites = this.state.estates.slice();
+    console.log("remove favorites");
+    console.log(favorites);
     var estate = favorites.filter(function(favorite) {return favorite.id === id});
-    if (estate) {
-      var index = favorites.indexOf(estate);
+    console.log(estate);
+    if (estate.length > 0) {
+      var index = favorites.indexOf(estate[0]);
+      console.log("index:" + index);
       favorites.splice(index, 1);
+      console.log(favorites);
       this.setState({estates: favorites});
     }
   },
@@ -149,11 +165,8 @@ var ResultList = React.createClass({
 
     return(
       <div className="container">        
-         <h1>Propositions</h1>
-         <NumberWarning numberWarning = {numberWarning}/>
-         <ul className="ulResultList">
-          {resultElems}
-         </ul> 
+         { index > -1 ? <h1>Favorites</h1> : <h1>Propositions</h1>}
+         { numberWarning > 0 ? <div><NumberWarning numberWarning = {numberWarning}/><ul className="ulResultList">{resultElems}</ul></div> : <EmptyResults/> }
       </div>
     );
   }
