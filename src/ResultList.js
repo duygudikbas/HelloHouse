@@ -23,15 +23,34 @@ var RemoveFromFavoritesButton = React.createClass({
 });
 
 var AResult = React.createClass({
+
+  getLocation: function(){
+      if(this.props.estate.location.indexOf('Undisclosed address in ') !== -1) {
+        return this.props.estate.location.replace('Undisclosed address in ', '' );
+      }
+
+      if(this.props.estate.location.indexOf('Address not disclosed') !== -1) {
+        return this.props.estate.location.replace('Address not disclosed', '' );
+      } 
+
+      if(this.props.estate.location.indexOf('Undisclosed number in ') !== -1) {
+        return this.props.estate.location.replace('Undisclosed number in ', '' );
+      } 
+
+      return this.props.estate.location;      
+  },
 render: function(){
     var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     if (price) {price += " €"};
+    
+
     return(
       <Link to={urlTo} >
         <li className="liResultList">
-          <p className="location"> {this.props.estate.location} </p>
+          <p className="location"> { this.getLocation() } </p>
+        {/*<p className="location"> {this.props.estate.location} </p>*/}
           <p className="price">&nbsp;{price}</p>
           <img className="imgResultList" src={this.props.estate.image[0]}/>
           {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id}/></span> : null}

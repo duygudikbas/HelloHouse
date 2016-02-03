@@ -4,7 +4,7 @@ var Link = require('react-router').Link;
 
 var PropertyDetail = React.createClass({
   getInitialState: function() {
-    return {estate: {image: [], properties:[]}};
+    return {estate: {image: [], properties:[], location: ""}};
   },
   componentWillMount: function() {
     var estateId = this.props.params.id;
@@ -39,10 +39,27 @@ var PropertyDetail = React.createClass({
 
   },
 
+  getLocation: function(){
+      if(this.state.estate.location.indexOf('Undisclosed address in ') !== -1) {
+        return this.state.estate.location.replace('Undisclosed address in ', '' );
+      }
+
+      if(this.state.estate.location.indexOf('Address not disclosed') !== -1) {
+        return this.state.estate.location.replace('Address not disclosed', '' );
+      } 
+
+      if(this.state.estate.location.indexOf('Undisclosed number in ') !== -1) {
+        return this.state.estate.location.replace('Undisclosed number in ', '' );
+      } 
+
+      return this.state.estate.location;      
+  },
+
   render: function(){
     return(
        <div className="container propertyDetail">
-        <h2>{this.state.estate.location}</h2>
+       { /* <h2>{this.state.estate.location}</h2>  */}
+       <h2>{ this.getLocation() }</h2>
           <div className="row">
             <div className="col-xs-12">
         
