@@ -10,8 +10,9 @@ var RemoveFromFavoritesButton = React.createClass({
         url: urlRemove,
         type: 'DELETE',
         success: function(result) {
-            // Do something with the result
-        }
+          this.props.onRemoveFavorite(this.props.id);
+          //$("li#estate"+this.props.id).remove().animate({rotate: "20"}, 500);
+        }.bind(this)
     });
   },
 
@@ -27,14 +28,15 @@ render: function(){
     var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
+    var elemId = "estate"+this.props.estate.id
     if (price) {price += " €"};
     return(
       <Link to={urlTo} >
-        <li className="liResultList">
+        <li key={this.props.estate.id} id={elemId} className="liResultList">
           <p className="location"> {this.props.estate.location} </p>
           <p className="price">&nbsp;{price}</p>
           <img className="imgResultList" src={this.props.estate.image[0]}/>
-          {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id}/></span> : null}
+          {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
         </li>
       </Link>
     );
@@ -64,7 +66,7 @@ var NumberWarning = React.createClass({
 
 var ResultList = React.createClass({
   getInitialState: function() {
-    return {estates: [], favorite : false};
+    return {estates: [], favorite : false, numberToSee : 0};
   },
 
   componentDidMount: function() {
@@ -96,6 +98,16 @@ var ResultList = React.createClass({
     }
   },
 
+  handleRemoveFavorite: function(id) {
+    var favorites = this.state.estates.slice();
+    var estate = favorites.filter(function(favorite) {return favorite.id === id});
+    if (estate) {
+      var index = favorites.indexOf(estate);
+      favorites.splice(index, 1);
+      this.setState({estates: favorites});
+    }
+  },
+
   filter : function(estate){
     if (this.props.filter.minPrice > 0 && this.props.filter.minPrice > estate.price){ return false; };
     if (this.props.filter.maxPrice > 0 &&this.props.filter.maxPrice < estate.price){ return false; };
@@ -120,15 +132,21 @@ var ResultList = React.createClass({
     return true;
   },
 
+  // adaptNumber : function(number){
+  //   this.setState({numberToSee : number });
+  // },
+
   render: function(){
     var index = this.props.location.pathname.indexOf("Favorites");
     var filteredEstates = this.state.estates.filter(this.filter);
     var numberWarning = filteredEstates.length;
+    //this.adaptNumber(numberWarning);
     var resultElems = filteredEstates.map(function(estate) {
       return (
-        <AResult key={estate.id} estate={estate} favFlag={index}/>
+        <AResult key={estate.id} onRemoveFavorite={this.handleRemoveFavorite} estate={estate} favFlag={index} />
        );
-    }); 
+    }.bind(this)); 
+
     return(
       <div className="container">        
          <h1>Propositions</h1>
