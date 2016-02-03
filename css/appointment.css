@@ -3,14 +3,12 @@
 }
 
 #datepickerInput{
-  /*width: 175px;
-        margin-right: 47px;*/
     display: inline;
     width: 110px;
     margin-right: 16px;
     margin-left: 16px;
 }
 
-p span {
+#stepCount {
 	color:black;
 }
