@@ -9,6 +9,10 @@ var BasicSearch = React.createClass({
             open: !this.state.open
         });
     },
+    handlechangecheck: function() {
+console.log("nardim");
+$('#garden').prop('checked', false);
+    },
     getInitialState: function() {
         return {
             open: false
@@ -56,6 +60,7 @@ var BasicSearch = React.createClass({
     render: function() {
         var advancedSearch;
         if (this.state.open) {
+
             advancedSearch = 
             <div>
                  <div className="row">
@@ -65,13 +70,13 @@ var BasicSearch = React.createClass({
                 </div> 
                 <div className="row">
                     <div className="col-xs-offset-1 col-xs-3">
-                           <input type="number" className="roomNumber" id="minRoom" placeholder="min"  ref="minRoom"/>
+                           <input type="number" className="roomNumber" id="minRoom" placeholder="min"  ref="minRoom" onChange={this.setFilter}  value={this.props.filter.minRoom} />
                     </div>
                      <div className="col-xs-2">
                           <label> To: < /label> 
                     </div>
                      <div className="col-xs-4">
-                          <input type="number" className="roomNumber" id="maxRoom" placeholder="max"  ref="maxRoom"/>
+                          <input type="number" className="roomNumber" id="maxRoom" placeholder="max"  ref="maxRoom" onChange={this.setFilter}  value={this.props.filter.maxRoom} />
                     </div>
                 </div> 
 
@@ -84,27 +89,28 @@ var BasicSearch = React.createClass({
                 </div>
                  <div className="row">
                     <div className="col-xs-offset-1 col-xs-3">
-                          <input type = "number" className="surface" id = "minSurface" placeholder = "min"  ref="minSurface"/>
+                          <input type = "number" className="surface" id = "minSurface" placeholder = "min"  ref="minSurface" onChange={this.setFilter}  value={this.props.filter.minSurface}/>
                     </div>
                      <div className="col-xs-2">
                           <label> To: < /label> 
                     </div>
                      <div className="col-xs-4">
-                          <input type="number" className="surface" id="maxSurface" placeholder="max" ref="maxSurface"/>
+                          <input type="number" className="surface" id="maxSurface" placeholder="max" ref="maxSurface" onChange={this.setFilter}  value={this.props.filter.maxSurface} />
                     </div>
                 </div> 
-
+ 
                 <div className="row">
                 <div className="col-xs-5">
-                    <input type = "checkbox" name = "garden" value = "garden"  ref="garden"/>
+
+                    <input type = "checkbox" name = "garden" id="garden" value = "garden"  ref="garden" onChange={this.setFilter} checked={this.props.filter.garden}/>
                     <label> Garden < /label> 
                 </div>
                 <div className="col-xs-4">
-                    <input type = "checkbox" name = "garage" value = "garage"  ref="garage"/>
+                    <input type = "checkbox" name = "garage" value = "garage"  ref="garage" onChange={this.setFilter} checked={this.props.filter.garage}/>
                     <label> Garage < /label> 
                 </div>
                 <div className="col-xs-3">
-                    <input type = "checkbox" name = "pool"  value = "pool" ref="pool"/>
+                    <input type = "checkbox" name = "pool" onChange={this.setFilter} checked={this.props.filter.pool} value = "pool" ref="pool"/>
                     <label> pool  < /label> 
                 </div>
                 </div>
@@ -117,11 +123,11 @@ var BasicSearch = React.createClass({
 
                 <div className="row">
                  <div className="col-xs-offset-1 col-xs-6">
-                      <input type = "checkbox" name="Appartment" value="Appartment" ref="appartment"/ >
+                      <input type = "checkbox" name="Appartment" value="Appartment" ref="appartment" onChange={this.setFilter} checked={this.props.filter.appartment}/ >
                       <label> Appartment </label>
                     </div>
                     <div className="col-xs-5"> 
-                      <input type = "checkbox"   name = "House" value = "House" ref="house"/ >
+                      <input type = "checkbox"   name = "House" value = "House" ref="house" onChange={this.setFilter} checked={this.props.filter.house}/ >
                       <label> House </label> 
                     </div>
                 </div> 
@@ -134,7 +140,7 @@ var BasicSearch = React.createClass({
 
                 <div className="row">
                   <div className="col-xs-offset-1 col-xs-11">
-                      <input type='text' id="searchAutoComplete" placeholder="Enter location" ref="location" / >
+                      <input type='text' id="searchAutoComplete"  placeholder="Enter location" ref="location" onChange={this.setFilter} value={this.props.filter.location} / >
                    </div>
                 </div>
 
@@ -147,7 +153,7 @@ var BasicSearch = React.createClass({
 
                  <div className="row">
                      <div className="col-xs-offset-1 col-xs-9">
-                        <input type="number" id = "minPrice" placeholder="min" ref="minPrice"/ >
+                        <input type="number" id = "minPrice" placeholder="min" ref="minPrice" onChange={this.setFilter} value={this.props.filter.minPrice}/ >
                      </div>
                     <div className="col-xs-4">
                         <label>To:</label> 
@@ -156,7 +162,7 @@ var BasicSearch = React.createClass({
 
                 <div className="row">
                     <div className="col-xs-offset-1 col-xs-12">
-                        <input type="number" id="max" placeholder= "max"  ref="maxPrice"/ >
+                        <input type="number" id="max" placeholder= "max"  ref="maxPrice" onChange={this.setFilter} value={this.props.filter.maxPrice} / >
                     </div>
                 </div>
                 <div>
@@ -167,6 +173,11 @@ var BasicSearch = React.createClass({
         );
     },
     componentDidMount: function() {
+/*      $(this.refs.location).val('1000');*/
+//component load 
+
+console.log("garden "+this.props.filter.garden);
+$('#garden').prop('checked', this.props.filter.garden);
         var url = "http://localhost:3000/cities";
 
         $.get(url, function(data) {
@@ -176,7 +187,9 @@ var BasicSearch = React.createClass({
             });
             $(this.refs.location).autocomplete({
                 source: doubles
+
             });
+  
         }.bind(this), 'json');
 
         console.log(this.refs.location);
