@@ -65,7 +65,11 @@ var ResultList = React.createClass({
     if (index == 0){
       //favorites
       $.get("http://localhost:3000/favorites", function(favorites) {
-        $.get("http://estates-api.herokuapp.com/estates", function(data) {
+        var urlFavorites = "http://estates-api.herokuapp.com/estates?id=";
+        var favList = favorites.join('&id=');
+        console.log("favList : "+favList);
+        urlFavorites += favList;
+        $.get(urlFavorites, function(data) {
           this.setState({estates: data});
         }.bind(this), 'json');
       }.bind(this), 'json');
@@ -75,7 +79,6 @@ var ResultList = React.createClass({
       this.setState({estates: data});
     }.bind(this), 'json');
     }
-
   },
 
   filter : function(estate){
