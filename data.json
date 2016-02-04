@@ -13019,10 +13019,14 @@
       "zip": "9420",
       "name": "Aaigem",
       "priceDetail": {
-        "priceAptCenter": "5555€",
-        "price_apt_out_of_center": "5555€",
-        "priceHouseCenter": "5555€",
-        "price_house_out_of_center": "5555€"
+        "priceAptCenter": "1200€",
+        "price_apt_out_of_center": "900€",
+        "priceHouseCenter": "1900€",
+        "price_house_out_of_center": "1500€",
+        "rangeAptCenter": "900-1500€",
+        "range_apt_out_of_center": "700-1100€",
+        "rangeHouseCenter": "1500-2300€",
+        "range_house_out_of_center": "1300-2000€"
       }
     },
     {
@@ -13033,7 +13037,11 @@
         "priceAptCenter": "2222€",
         "price_apt_out_of_center": "2222€",
         "priceHouseCenter": "2222€",
-        "price_house_out_of_center": "2222€"
+        "price_house_out_of_center": "2222€",
+        "rangeAptCenter": "500-666€",
+        "range_apt_out_of_center": "700-888€",
+        "rangeHouseCenter": "1500-3333€",
+        "range_house_out_of_center": "1300-4444€"
       }
     },
     {
@@ -13044,7 +13052,11 @@
         "priceAptCenter": "5555€",
         "price_apt_out_of_center": "5555€",
         "priceHouseCenter": "5555€",
-        "price_house_out_of_center": "5555€"
+        "price_house_out_of_center": "5555€",
+        "rangeAptCenter": "444-777€",
+        "range_apt_out_of_center": "600-999€",
+        "rangeHouseCenter": "1500-3333€",
+        "range_house_out_of_center": "1300-4444€"
       }
     },
     {
@@ -13055,7 +13067,11 @@
         "priceAptCenter": "8888€",
         "price_apt_out_of_center": "8888€",
         "priceHouseCenter": "8888€",
-        "price_house_out_of_center": "8888€"
+        "price_house_out_of_center": "8888€",
+        "rangeAptCenter": "888-777€",
+        "range_apt_out_of_center": "888-999€",
+        "rangeHouseCenter": "888-3333€",
+        "range_house_out_of_center": "888-4444€"
       }
     },
     {
@@ -13066,7 +13082,11 @@
         "priceAptCenter": "3333€",
         "price_apt_out_of_center": "3333€",
         "priceHouseCenter": "3333€",
-        "price_house_out_of_center": "3333€"
+        "price_house_out_of_center": "3333€",
+        "rangeAptCenter": "333-777€",
+        "range_apt_out_of_center": "333-999€",
+        "rangeHouseCenter": "333-3333€",
+        "range_house_out_of_center": "333-4444€"
       }
     },
     {
