@@ -22,7 +22,8 @@
       border-color: white;
 }
 .jumbotron_main{
-        background-color: #F3843E;
+        background-color: transparent;
+
         z-index: 1;
 }
 
