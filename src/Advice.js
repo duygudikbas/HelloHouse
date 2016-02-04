@@ -22,12 +22,9 @@ var Advice = React.createClass({
 	  render: function(){
 	  	console.log("render");
 	    return(
-	       <div className="container">   
+	       <div className="container advice">   
 	       	<Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>       
-	         <h1>How Can We Help You ?</h1>
 			  <div className="panel panel-default">
-			  
-
 			    <div className="panel-heading">Please send us your questions !</div>
 			    <div className="panel-body">
 			    	{this.state.showInfoDiv ? <UserInformation /> : null}
