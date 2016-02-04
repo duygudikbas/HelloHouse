@@ -45,9 +45,7 @@ var PriceTableRows = React.createClass({
   componentDidUpdate: function(prevProps) {
       if (prevProps.location.locationPrimary != this.props.location.locationPrimary) {
 
-	      console.log("getPrimaryURL");
 	      var url = "http://localhost:3000/cities?name="+ this.getPrimaryName();
-	      console.log(url);
 		      $.get(url, function(data) {
 		      	// data.priceDetail = {
 		      	// 	priceAptCenter: MAth.random
@@ -58,14 +56,12 @@ var PriceTableRows = React.createClass({
 	      console.log("getSecondaryURL");
 	      var tempSLocation = $.extend({}, this.state.location);
 	      var url = "http://localhost:3000/cities?name="+ this.getSecondaryName();
-	      console.log(url);
 		      $.get(url, function(data) {
 			      this.setState({secondary: data});
 			    }.bind(this), 'json');
 			}
   },
   componentDidMount: function() {
-  	  console.log("componentDidMount");
       var url = "http://localhost:3000/cities?name="+ this.getPrimaryName();
       console.log(url);
       console.log(this.getPrimaryName());
@@ -73,38 +69,55 @@ var PriceTableRows = React.createClass({
 	      this.setState({primary: data});
 	    }.bind(this), 'json');
   },
+  calculatePercentage: function(primaryPrice, secondaryPrice) {
+  		var result;
+  		var numberPrimaryPrice = Number(primaryPrice.substring(0, primaryPrice.length - 1));
+  		var numberSecondaryPrice = Number(secondaryPrice.substring(0, secondaryPrice.length - 1));
+  		var percentage = (numberSecondaryPrice*100)/numberPrimaryPrice;
+			 console.log("calculatePercentage");
+			  console.log(numberPrimaryPrice);
+  		 console.log(percentage);
+  		 if (primaryPrice < secondaryPrice) {
+  		 		result = "-"+ percentage + "%"
+  		 } else {
+  		 		result = "+"+ percentage + "%"
+  		 }
+  		 return result;
+  },
   render: function(){
-  	console.log("this.props.showTable");
-  	console.log(this.props.showColumnSecondary);
   	return(
 	    <tbody>
 		  		<tr>
 			     <td>Apt Centre</td>
 				     <td >{this.state.primary[0].priceDetail.priceAptCenter}</td>
 				     {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.rangeAptCenter}</td>	 : null}
-				      {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.priceAptCenter}</td> : null}
+				     {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.priceAptCenter}</td> : null}
+				     {this.props.showColumnSecondary ? <td>{this.calculatePercentage(this.state.primary[0].priceDetail.priceAptCenter,this.state.secondary[0].priceDetail.priceAptCenter)}</td> : null}
 				    
 			    </tr>
+
    				<tr >
             <td>House Centre</td>
             <td >{this.state.primary[0].priceDetail.priceHouseCenter}</td>
             {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.rangeHouseCenter}</td>	 : null}
             {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.priceHouseCenter}</td> : null}
-				    
+				    {this.props.showColumnSecondary ? <td>{this.calculatePercentage(this.state.primary[0].priceDetail.priceHouseCenter,this.state.secondary[0].priceDetail.priceHouseCenter)}</td> : null}
           </tr>
+
           <tr>
             <td>Apt Out Centre</td>
             <td>{this.state.primary[0].priceDetail.price_apt_out_of_center}</td>
             {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.range_apt_out_of_center}</td>	 : null}
             {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.price_apt_out_of_center}</td> : null}
-				    
+				    {this.props.showColumnSecondary ? <td>{this.calculatePercentage(this.state.primary[0].priceDetail.price_apt_out_of_center,this.state.secondary[0].priceDetail.price_apt_out_of_center)}</td> : null}
           </tr>
+
           <tr>
             <td>House Out Centre</td>
             <td>{this.state.primary[0].priceDetail.price_house_out_of_center}</td>        
             {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.range_house_out_of_center}</td>	 : null}
             {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.price_house_out_of_center}</td>	 : null}
-				    
+				    {this.props.showColumnSecondary ? <td>{this.calculatePercentage(this.state.primary[0].priceDetail.price_house_out_of_center,this.state.secondary[0].priceDetail.price_house_out_of_center)}</td> : null}
           </tr>
 		   </tbody>
   	);
@@ -118,7 +131,7 @@ var PriceTable = React.createClass({
          <thead>
 	       <tr>
 	          <th></th>
-	          <th>{this.props.location.locationPrimary} - Rent Price</th>           
+	          <th>{this.props.location.locationPrimary} - Rent</th>           
 	          {!this.props.showColumnSecondary ? <th>{this.props.location.locationPrimary} - Range</th> : null}
 	          {this.props.showColumnSecondary ? <th>{this.props.location.locationSecondary} - Rent Price</th> : null}
 	          
