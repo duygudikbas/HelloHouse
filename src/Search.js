@@ -27,6 +27,8 @@ $('#garden').prop('checked', false);
         var house = this.refs.house.checked;
         var appartment = this.refs.appartment.checked;
 
+        var open = this.state.open;
+
         if (this.state.open){
             var minRoom = this.refs.minRoom.value;
             var maxRoom = this.refs.maxRoom.value; 
@@ -49,7 +51,8 @@ $('#garden').prop('checked', false);
                 pool : pool, 
                 location : location,
                 house : house,
-                appartment : appartment
+                appartment : appartment,
+                open : open
             };
         this.props.initiateFilter(filter);
         console.log("filter:");
