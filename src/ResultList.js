@@ -30,12 +30,24 @@ render: function(){
     var price = this.props.estate.price;
     var elemId = "estate"+this.props.estate.id
     if (price) {price += " €"};
+
+    var divStyle = {
+ 
+  backgroundImage: "url("+this.props.estate.image[0] +")"
+ 
+};
+var nameofclass="liResultList ";
+if(true)
+{
+  nameofclass+="ribbonnew"
+}
     return(
       <Link to={urlTo} >
-        <li key={this.props.estate.id} id={elemId} className="liResultList">
-          <p className="location"> {this.props.estate.location} </p>
+        <li key={this.props.estate.id}  style={divStyle} id={elemId} className={nameofclass}>
+          <p className="location"> {this.props.estate.location  } </p>
+
           <p className="price">&nbsp;{price}</p>
-          <img className="imgResultList" src={this.props.estate.image[0]}/>
+         
           {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
         </li>
       </Link>

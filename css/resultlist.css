@@ -56,3 +56,33 @@
 
 .liResultList.remove {
   }
+  .ribbonnew{
+     
+        color: green;
+        padding: 10px;
+        overflow: hidden;
+        position: relative;
+
+
+  }
+ .ribbonnew:after {
+        position: absolute;
+        content: "Boss";
+        top: 10px;
+        left: -27px;
+        height: 30px;
+        width: 100px;
+        line-height: 30px;
+        background: pink;
+
+        font-weight: bold;
+        transform: rotate(-45deg);
+        box-shadow: 5px 5px 20px #888888;
+    }
+  ul {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+    
