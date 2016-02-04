@@ -4,7 +4,7 @@ var Link = require('react-router').Link;
 
 var PropertyDetail = React.createClass({
   getInitialState: function() {
-    return {estate: {image: [], properties:[]}};
+    return {estate: {image: [], properties:[], location: ""}};
   },
   componentWillMount: function() {
     var estateId = this.props.params.id;
@@ -39,36 +39,51 @@ var PropertyDetail = React.createClass({
 
   },
 
+  getLocation: function(){
+      if(this.state.estate.location.indexOf('Undisclosed address in ') !== -1) {
+        return this.state.estate.location.replace('Undisclosed address in ', '' );
+      }
+
+      if(this.state.estate.location.indexOf('Address not disclosed') !== -1) {
+        return this.state.estate.location.replace('Address not disclosed', '' );
+      } 
+
+      if(this.state.estate.location.indexOf('Undisclosed number in ') !== -1) {
+        return this.state.estate.location.replace('Undisclosed number in ', '' );
+      } 
+
+      return this.state.estate.location;      
+  },
+
   render: function(){
     return(
-       <div className="container propertyDetail">
-        <h2>{this.state.estate.location}</h2>
+      <div className="container propertyDetail">
+        <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link> 
+        <h2>{ this.getLocation() }</h2>
           <div className="row">
             <div className="col-xs-12">
-        
-            <div id="myCarousel" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-              </ol>
-              <div className="carousel-inner" role="listbox">
-                <div className="item active">
-                  <img src={this.state.estate.image[0]} alt="SanFranciscoGoldenGate"/>
+              <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                <ol className="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div className="carousel-inner" role="listbox">
+                  <div className="item active">
+                    <img src={this.state.estate.image[0]} alt="SanFranciscoGoldenGate"/>
+                  </div>
+                  <div className="item">
+                    <img src={this.state.estate.image[1]} alt="City Center"/>
+                  </div>
                 </div>
-                <div className="item">
-                  <img src={this.state.estate.image[1]} alt="City Center"/>
-                </div>
+                <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span className="sr-only">Previous</span>
+                </a>
+                <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span className="sr-only">Next</span>
+                </a>
               </div>
-              <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
-            </div>
-
             </div>
           </div>
           <div className="row">
@@ -92,7 +107,6 @@ var PropertyDetail = React.createClass({
                 <p>{this.state.estate.description}</p>
             </div>
           </div>
-
           <div className="row">
             <div className="col-xs-6">
               <Link to="Appointment/AppointmentWhere" className="btn btn_default" >Make Appointment</Link>
@@ -101,7 +115,6 @@ var PropertyDetail = React.createClass({
               <button type="button" className="btn btn_default" onClick={this.addToFavorites}>Add to Favourites</button>
             </div>
           </div>
-
       </div>
     );
   }

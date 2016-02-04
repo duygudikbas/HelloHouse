@@ -1,10 +1,28 @@
-.compare th,p{
+.compare{
   color:white;
 }
 
 .compare td, th{
   color:black;
 }
+
+.compare .row {
+      margin-bottom: 10px;
+}
+
+.row:first-child{
+	margin-top: 10px;
+}
+
+#searchForPrimary {
+  color: black;
+}
+
+#searchForSecondary {
+  color: black;
+}
+
+
 
 
 

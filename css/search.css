@@ -19,6 +19,10 @@ font-size:22px;
   color: black
 }
 
+#searchForComparison {
+  color: black
+}
+
 .search input {
 	color:black;
 	font-size:18px;;

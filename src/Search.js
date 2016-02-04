@@ -66,7 +66,7 @@ $('#garden').prop('checked', false);
             <div>
                  <div className="row">
                  <div className="col-xs-12">
-                    <label htmlFor = "usr" > Room: < /label> 
+                    <label> Room: < /label> 
                  </div> 
                 </div> 
                 <div className="row">
@@ -120,56 +120,58 @@ $('#garden').prop('checked', false);
             advancedSearch = "";
         }
         return ( 
-            <div className="container search">   
+            <div>
+                <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>
+                <div className="container search">   
+                    <div className="row">
+                     <div className="col-xs-offset-1 col-xs-6">
+                          <input type = "checkbox" name="Appartment" value="Appartment" ref="appartment" onChange={this.setFilter} checked={this.props.filter.appartment}/ >
+                          <label> Appartment </label>
+                        </div>
+                        <div className="col-xs-5"> 
+                          <input type = "checkbox"   name = "House" value = "House" ref="house" onChange={this.setFilter} checked={this.props.filter.house}/ >
+                          <label> House </label> 
+                        </div>
+                    </div> 
 
-                <div className="row">
-                 <div className="col-xs-offset-1 col-xs-6">
-                      <input type = "checkbox" name="Appartment" value="Appartment" ref="appartment" onChange={this.setFilter} checked={this.props.filter.appartment}/ >
-                      <label> Appartment </label>
-                    </div>
-                    <div className="col-xs-5"> 
-                      <input type = "checkbox"   name = "House" value = "House" ref="house" onChange={this.setFilter} checked={this.props.filter.house}/ >
-                      <label> House </label> 
-                    </div>
-                </div> 
-
-                <div className="row">
-                 <div className="col-xs-12">
-                      <label> Location: < /label> 
-                 </div>
-                </div>
-
-                <div className="row">
-                  <div className="col-xs-offset-1 col-xs-11">
-                      <input type='text' id="searchAutoComplete"  placeholder="Enter location" ref="location" onChange={this.setFilter} value={this.props.filter.location} / >
-                   </div>
-                </div>
-
-
-               <div className="row">
-                <div className="col-xs-12">
-                    <label>Price:</label> 
-                </div>
-                </div> 
-
-                 <div className="row">
-                     <div className="col-xs-offset-1 col-xs-9">
-                        <input type="number" id = "minPrice" placeholder="min" ref="minPrice" onChange={this.setFilter} value={this.props.filter.minPrice}/ >
+                    <div className="row">
+                     <div className="col-xs-12">
+                          <label> Location: < /label> 
                      </div>
-                    <div className="col-xs-4">
-                        <label>To:</label> 
                     </div>
-                </div> 
 
-                <div className="row">
-                    <div className="col-xs-offset-1 col-xs-12">
-                        <input type="number" id="max" placeholder= "max"  ref="maxPrice" onChange={this.setFilter} value={this.props.filter.maxPrice} / >
+                    <div className="row">
+                      <div className="col-xs-offset-1 col-xs-11">
+                          <input type='text' id="searchAutoComplete"  placeholder="Enter location" ref="location" onChange={this.setFilter} value={this.props.filter.location} / >
+                       </div>
                     </div>
+
+
+                   <div className="row">
+                    <div className="col-xs-12">
+                        <label>Price:</label> 
+                    </div>
+                    </div> 
+
+                     <div className="row">
+                         <div className="col-xs-offset-1 col-xs-9">
+                            <input type="number" id = "minPrice" placeholder="min" ref="minPrice" onChange={this.setFilter} value={this.props.filter.minPrice}/ >
+                         </div>
+                        <div className="col-xs-4">
+                            <label>To:</label> 
+                        </div>
+                    </div> 
+
+                    <div className="row">
+                        <div className="col-xs-offset-1 col-xs-12">
+                            <input type="number" id="max" placeholder= "max"  ref="maxPrice" onChange={this.setFilter} value={this.props.filter.maxPrice} / >
+                        </div>
+                    </div>
+                    <div>
+                        <button className="btn btn_default advancedBtn" onClick = {this.handle} > Advanced Search < /button> {advancedSearch} 
+                            <Link to = "/ResultList" className="btn btn_default searchBtn" onClick={this.setFilter}> Search < /Link> 
+                    </div> 
                 </div>
-                <div>
-                    <button className="btn btn_default advancedBtn" onClick = {this.handle} > Advanced Search < /button> {advancedSearch} 
-                        <Link to = "/ResultList" className="btn btn_default searchBtn" onClick={this.setFilter}> Search < /Link> 
-                </div> 
             </div>
         );
     },

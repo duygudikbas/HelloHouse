@@ -1,4 +1,6 @@
 var React = require('react');
+var Link = require('react-router').Link;
+
 var UserInformation = React.createClass({
 	render : function(){
 		return (
@@ -15,14 +17,13 @@ var Advice = React.createClass({
 	     return ({showInfoDiv:false});
 	  },	   
 	  HandleOnQustionSubmit: function(){
-	  	console.log("HandleOnQustionSubmit");
 	  	 this.setState({showInfoDiv: true});
-	  	 console.log(this.state.showInfoDiv);
 	  },
 	  render: function(){
 	  	console.log("render");
 	    return(
-	       <div className="container">        
+	       <div className="container">   
+	       	<Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>       
 	         <h1>How Can We Help You ?</h1>
 			  <div className="panel panel-default">
 			  

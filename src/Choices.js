@@ -15,7 +15,7 @@ var Choices = React.createClass({
               <div className="list-group list-group-horizontal">
                 <Link to="Search" className="list-group-item active" onClick={this.handleHidePage}>Search Property</Link>
                 <Link to="Advice"  className="list-group-item" onClick={this.handleHidePage}>Get Advice</Link>
-                <Link to="Compare" className="list-group-item" onClick={this.handleHidePage}>Compare Loan / Price</Link>
+                <Link to="Compare" className="list-group-item" onClick={this.handleHidePage}>Investement</Link>
                 <Link to="Favorites" className="list-group-item" onClick={this.handleHidePage}>Favorites</Link>
               </div>
             </div>

@@ -24,18 +24,40 @@ var RemoveFromFavoritesButton = React.createClass({
 });
 
 var AResult = React.createClass({
+
+  getLocation: function(){
+      if(this.props.estate.location.indexOf('Undisclosed address in ') !== -1) {
+        return this.props.estate.location.replace('Undisclosed address in ', '' );
+      }
+
+      if(this.props.estate.location.indexOf('Address not disclosed') !== -1) {
+        return this.props.estate.location.replace('Address not disclosed', '' );
+      } 
+
+      if(this.props.estate.location.indexOf('Undisclosed number in ') !== -1) {
+        return this.props.estate.location.replace('Undisclosed number in ', '' );
+      } 
+
+      return this.props.estate.location;      
+  },
 render: function(){
     var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     var elemId = "estate"+this.props.estate.id
     if (price) {price += " €"};
+    var divStyle = {
+ 
+  backgroundImage: "url("+this.props.estate.image[0] +")"
+ 
+};
+
     return(
       <Link to={urlTo} >
-        <li key={this.props.estate.id} id={elemId} className="liResultList">
-          <p className="location"> {this.props.estate.location} </p>
+        <li key={this.props.estate.id}  style={divStyle} id={elemId} className="liResultList">
+          <p className="location"> { this.getLocation() } </p>
           <p className="price">&nbsp;{price}</p>
-          <img className="imgResultList" src={this.props.estate.image[0]}/>
+       
           {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
         </li>
       </Link>
@@ -164,7 +186,8 @@ var ResultList = React.createClass({
     }.bind(this)); 
 
     return(
-      <div className="container">        
+      <div className="container">   
+        <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>     
          { index > -1 ? <h1>Favorites</h1> : <h1>Propositions</h1>}
          { numberWarning > 0 ? <div><NumberWarning numberWarning = {numberWarning}/><ul className="ulResultList">{resultElems}</ul></div> : <EmptyResults/> }
       </div>
