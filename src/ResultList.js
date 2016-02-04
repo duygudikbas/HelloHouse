@@ -81,8 +81,8 @@ var EmptyResults = React.createClass({
   render: function(){
     return(
       <div>
-        <p>We are sorry, but there are no results for these criterias</p>
-
+        <p id="warningSearch">Sorry, there is no result for this criteria</p>
+        <Link to="/Search" id="refineCriteriaActionEmptyResult">Go Back To   Search</Link>
       </div>
     );
   }
@@ -170,8 +170,9 @@ var ResultList = React.createClass({
     }.bind(this)); 
 
     return(
-      <div className="container">        
-         { index > -1 ? <h1>Favorites</h1> : <h1>Propositions</h1>}
+      <div className="container">   
+          <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>     
+         { index > -1 ? <h1>Favorites</h1> : null}
          { numberWarning > 0 ? <div><NumberWarning numberWarning = {numberWarning}/><ul className="ulResultList">{resultElems}</ul></div> : <EmptyResults/> }
       </div>
     );

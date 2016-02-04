@@ -194,7 +194,7 @@ render: function(){
 				{this.state.showComparisonInput ?
 	        <div className="row">
 	         <div className="col-xs-offset-1 col-xs-3">
-	              <label> Compare: < /label>  
+	              <label> Compare To: < /label>  
 	         </div>
 	          <div className="col-xs-6">
 	              <input type='text' id="searchForSecondary" onChange ={this.handleOnchangeSecondary} placeholder="City For Comparison" ref="locationSecondary"/>

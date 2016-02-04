@@ -40,6 +40,12 @@ body {
     color: white;
 }
 
+#warningSearch{
+      margin-top: 13px;
+    font-size: 20px;
+        margin-top: 31px;
+}
+
 ::-webkit-input-placeholder {
    text-align: center;
 }
