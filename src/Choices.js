@@ -8,16 +8,16 @@ var Choices = React.createClass({
           <div className="jumbotron jumbotron_main"> 
            <div className="text-center">
               <div>
-                  <h2>You Dream !</h2>
+                  <h2><b>You Dream !</b></h2>
                    <h2>We will make it true !</h2>
                    <p id="signature">By BNP PARIBAS FORTIS</p>    
               </div>
               <div className="list-group list-group-horizontal">
-                <Link to="Search" className="list-group-item active" onClick={this.handleHidePage}>Search Property</Link>
-                <Link to="Advice"  className="list-group-item" onClick={this.handleHidePage}>Get Advice</Link>
-                <Link to="Compare" className="list-group-item" onClick={this.handleHidePage}>Investement</Link>
-                <Link to="Favorites" className="list-group-item" onClick={this.handleHidePage}>Favorites</Link>
-              </div>
+               <Link to="Search"  onClick={this.handleHidePage}><div className="timer_box"><h1>Search</h1><p>Property</p></div></Link>
+                <Link to="Advice"  onClick={this.handleHidePage}><div className="timer_box"><h1>Ask</h1><p>Advice</p></div></Link>
+              <Link to="Compare"   onClick={this.handleHidePage}><div className="timer_box"><h1>Best</h1><p>Invest</p></div></Link>
+                <Link to="Favorites"  onClick={this.handleHidePage}><div className="timer_box"><h1>Get</h1><p>Favorites</p></div></Link>
+                 </div>
             </div>
           </div> 
   
