@@ -15,8 +15,8 @@ var Choices = React.createClass({
               <div className="list-group list-group-horizontal">
                <Link to="Search"  onClick={this.handleHidePage}><div className="timer_box"><h1>Search</h1><p>Property</p></div></Link>
                 <Link to="Advice"  onClick={this.handleHidePage}><div className="timer_box"><h1>Ask</h1><p>Advice</p></div></Link>
-              <Link to="Compare"   onClick={this.handleHidePage}><div className="timer_box"><h1>Best</h1><p>Invest</p></div></Link>
-                <Link to="Favorites"  onClick={this.handleHidePage}><div className="timer_box"><h1>Get</h1><p>Favorites</p></div></Link>
+              <Link to="Compare"   onClick={this.handleHidePage}><div className="timer_box"><h1>Invest</h1><p>Estate</p></div></Link>
+                <Link to="Favorites"  onClick={this.handleHidePage}><div className="timer_box"><h1>Go To</h1><p>Favorites</p></div></Link>
                  </div>
             </div>
           </div> 
