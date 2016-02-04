@@ -33,7 +33,8 @@ render: function(){
 
     var divStyle = {
  
-  backgroundImage: "url("+this.props.estate.image[0] +")"
+  backgroundImage: "url("+this.props.estate.image[0] +")",
+  backgroundSize: "cover"
  
 };
 var nameofclass="liResultList ";
@@ -145,37 +146,23 @@ var ResultList = React.createClass({
    
     if (estate.type !== "Flat for sale" && estate.type !== "House for sale"){return false};
 
-    if (this.props.filter.appartment === false && estate.type === "Flat for sale" ){ return false; };
-    if (this.props.filter.house === false && estate.type === "House for sale" ){ return false; };
+    if (!this.props.filter.appartment && estate.type === "Flat for sale" ){ return false; };
+    if (!this.props.filter.house && estate.type === "House for sale" ){ return false; };
 
-    if (this.props.filter.garage !== estate.garage){ return false; };
-    if (this.props.filter.garden !== estate.garden){ return false; };
-    if (this.props.filter.pool !== estate.pool){ return false; };
-
-
-        // var filter = { 
-
-        //         garden : garden,
-        //         garage : garage,
-        //         pool : pool, 
-        //         location : location,
-        //         house : house,
-        //         appartment : appartment
-        //     };
+    if (this.props.filter.garage && !estate.garage){ return false; };
+    if (this.props.filter.garden && !estate.garden){ return false; };
+    if (this.props.filter.pool && !estate.pool){ return false; };
 
 
     return true;
   },
 
-  // adaptNumber : function(number){
-  //   this.setState({numberToSee : number });
-  // },
 
   render: function(){
     var index = this.props.location.pathname.indexOf("Favorites");
     var filteredEstates = this.state.estates.filter(this.filter);
+    if (index > -1) filteredEstates = this.state.estates;
     var numberWarning = filteredEstates.length;
-    //this.adaptNumber(numberWarning);
     var resultElems = filteredEstates.map(function(estate) {
       return (
         <AResult key={estate.id} onRemoveFavorite={this.handleRemoveFavorite} estate={estate} favFlag={index} />
