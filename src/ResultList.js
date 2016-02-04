@@ -131,14 +131,14 @@ var ResultList = React.createClass({
     if ((this.props.filter.minRoom) && (Number(this.props.filter.minRoom) > Number(estate.bedrooms))){ return false; };
     if ((this.props.filter.maxRoom) && (Number(this.props.filter.maxRoom) < Number(estate.bedrooms))){ return false; };
    
-    if (estate.type !== "Flat for sale" && estate.type !== "House for sale"){return false};
+    // if (estate.type !== "Flat for sale" && estate.type !== "House for sale"){return false};
 
-    if (this.props.filter.appartment === false && estate.type === "Flat for sale" ){ return false; };
-    if (this.props.filter.house === false && estate.type === "House for sale" ){ return false; };
+    // if (!this.props.filter.appartment && estate.type === "Flat for sale" ){ return false; };
+    // if (!this.props.filter.house && estate.type === "House for sale" ){ return false; };
 
-    if (this.props.filter.garage !== estate.garage){ return false; };
-    if (this.props.filter.garden !== estate.garden){ return false; };
-    if (this.props.filter.pool !== estate.pool){ return false; };
+    // if (this.props.filter.garage XOR estate.garage){ return false; };
+    // if (this.props.filter.garden XOR estate.garden){ return false; };
+    // if (this.props.filter.pool XOR estate.pool){ return false; };
 
 
         // var filter = { 
