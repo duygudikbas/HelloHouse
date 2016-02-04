@@ -78,9 +78,9 @@ var PriceTableRows = React.createClass({
 			  console.log(numberPrimaryPrice);
   		 console.log(percentage);
   		 if (primaryPrice < secondaryPrice) {
-  		 		result = "-"+ percentage + "%"
+  		 		result = "-"+ parseInt(percentage) + "%"
   		 } else {
-  		 		result = "+"+ percentage + "%"
+  		 		result = "+"+ parseInt(percentage) + "%"
   		 }
   		 return result;
   },
@@ -130,10 +130,11 @@ var PriceTable = React.createClass({
           <table className="table table-hover">
          <thead>
 	       <tr>
-	          <th></th>
+	          <th>Price</th>
 	          <th>{this.props.location.locationPrimary} - Rent</th>           
 	          {!this.props.showColumnSecondary ? <th>{this.props.location.locationPrimary} - Range</th> : null}
-	          {this.props.showColumnSecondary ? <th>{this.props.location.locationSecondary} - Rent Price</th> : null}
+	          {this.props.showColumnSecondary ? <th>{this.props.location.locationSecondary} -Rent</th> : null}
+	           {this.props.showColumnSecondary ? <th>Diff</th> : null}
 	          
 	        </tr>
 	     </thead>
