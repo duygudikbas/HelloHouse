@@ -73,16 +73,17 @@ var PriceTableRows = React.createClass({
   		var result;
   		var numberPrimaryPrice = Number(primaryPrice.substring(0, primaryPrice.length - 1));
   		var numberSecondaryPrice = Number(secondaryPrice.substring(0, secondaryPrice.length - 1));
-  		var percentage = (numberSecondaryPrice*100)/numberPrimaryPrice;
+  		var percentage = (numberPrimaryPrice/numberSecondaryPrice)*100;
 			 console.log("calculatePercentage");
 			  console.log(numberPrimaryPrice);
   		 console.log(percentage);
-  		 if (primaryPrice < secondaryPrice) {
-  		 		result = "-"+ parseInt(percentage) + "%"
-  		 } else {
-  		 		result = "+"+ parseInt(percentage) + "%"
+  		 
+  		 if (numberPrimaryPrice !== numberSecondaryPrice) {
+  		 		return parseInt(percentage) + "%";
+  		 } 
+  		 if (numberPrimaryPrice === numberSecondaryPrice) {
+  		 		return "-"
   		 }
-  		 return result;
   },
   render: function(){
   	return(
