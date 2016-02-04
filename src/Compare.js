@@ -11,7 +11,11 @@ var PriceTableRows = React.createClass({
 		        priceAptCenter: "",
 		        price_apt_out_of_center: "",
 		        priceHouseCenter: "",
-		        price_house_out_of_center: ""
+		        price_house_out_of_center: "",
+		        rangeAptCenter: "",
+		        range_apt_out_of_center: "",
+		        rangeHouseCenter: "",
+		        range_house_out_of_center: "",
 		      }
  			 }], secondary:[{id:"", zip: "",
 			      	name: "",
@@ -19,7 +23,11 @@ var PriceTableRows = React.createClass({
 			        priceAptCenter: "",
 			        price_apt_out_of_center: "",
 			        priceHouseCenter: "",
-			        price_house_out_of_center: ""
+			        price_house_out_of_center: "",
+			        rangeAptCenter: "",
+		        	range_apt_out_of_center: "",
+		        	rangeHouseCenter: "",
+		        	range_house_out_of_center: "",
 			      }
 			 }]
     };
@@ -66,28 +74,37 @@ var PriceTableRows = React.createClass({
 	    }.bind(this), 'json');
   },
   render: function(){
-
+  	console.log("this.props.showTable");
+  	console.log(this.props.showColumnSecondary);
   	return(
 	    <tbody>
-		  		<tr  className="info">
+		  		<tr>
 			     <td>Apt Centre</td>
 				     <td >{this.state.primary[0].priceDetail.priceAptCenter}</td>
-				     <td >{this.state.secondary[0].priceDetail.priceAptCenter}</td>
+				     {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.rangeAptCenter}</td>	 : null}
+				      {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.priceAptCenter}</td> : null}
+				    
 			    </tr>
-   				<tr  className="danger">
+   				<tr >
             <td>House Centre</td>
             <td >{this.state.primary[0].priceDetail.priceHouseCenter}</td>
-				    <td >{this.state.secondary[0].priceDetail.priceHouseCenter}</td>
+            {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.rangeHouseCenter}</td>	 : null}
+            {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.priceHouseCenter}</td> : null}
+				    
           </tr>
-          <tr  className="info">
+          <tr>
             <td>Apt Out Centre</td>
-            <td >{this.state.primary[0].priceDetail.price_apt_out_of_center}</td>
-				    <td >{this.state.secondary[0].priceDetail.price_apt_out_of_center}</td>
+            <td>{this.state.primary[0].priceDetail.price_apt_out_of_center}</td>
+            {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.range_apt_out_of_center}</td>	 : null}
+            {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.price_apt_out_of_center}</td> : null}
+				    
           </tr>
-          <tr  className="danger">
+          <tr>
             <td>House Out Centre</td>
-            <td >{this.state.primary[0].priceDetail.price_house_out_of_center}</td>
-				    <td >{this.state.secondary[0].priceDetail.price_house_out_of_center}</td>
+            <td>{this.state.primary[0].priceDetail.price_house_out_of_center}</td>        
+            {!this.props.showColumnSecondary ? <td>{this.state.primary[0].priceDetail.range_house_out_of_center}</td>	 : null}
+            {this.props.showColumnSecondary ? <td>{this.state.secondary[0].priceDetail.price_house_out_of_center}</td>	 : null}
+				    
           </tr>
 		   </tbody>
   	);
@@ -101,12 +118,13 @@ var PriceTable = React.createClass({
          <thead>
 	       <tr>
 	          <th></th>
-	          <th>{this.props.location.locationPrimary} - Rent Price</th>
+	          <th>{this.props.location.locationPrimary} - Rent Price</th>           
+	          {!this.props.showColumnSecondary ? <th>{this.props.location.locationPrimary} - Range</th> : null}
 	          {this.props.showColumnSecondary ? <th>{this.props.location.locationSecondary} - Rent Price</th> : null}
 	          
 	        </tr>
 	     </thead>
-            <PriceTableRows  location={this.props.location}/>
+            <PriceTableRows  location={this.props.location} showColumnSecondary = {this.props.showColumnSecondary}/>
         </table>
       </div>
     );
@@ -115,7 +133,11 @@ var PriceTable = React.createClass({
 
 var Compare = React.createClass({
 	getInitialState: function() {
-    return {location:{locationPrimary:"", locationSecondary:""}, showTable:false, showColumnSecondary:false	};
+    return {location:{locationPrimary:"", locationSecondary:""}, showTable:false, showColumnSecondary:false, showComparisonInput:false};
+  },
+  handleOnchangeSecondary : function(){
+			console.log("autocompletechange");
+			this.setState({ showColumnSecondary: false});		
   },
  componentDidMount: function() {
     var url = "http://localhost:3000/cities";
@@ -129,18 +151,18 @@ var Compare = React.createClass({
         $(this.refs.locationPrimary).on('autocompleteselect', function (e, ui) {
 	  			var location = $.extend({}, this.state.location);
 			  	this.state.showTable = true;
-		       location.locationPrimary = ui.item.value;
-		     	 this.setState({location:location});
+			  	this.state.showComparisonInput = true;
+		      location.locationPrimary = ui.item.value;
+		     	this.setState({location:location, showTable:true,showComparisonInput:true });
+			     	$(this.refs.locationSecondary).autocomplete({
+	            source: doubles
+	       		});
+		        $(this.refs.locationSecondary).on('autocompleteselect', function (e, ui) {
+			    		var location = $.extend({}, this.state.location);
+			        location.locationSecondary = ui.item.value;
+			     		this.setState({location:location, showColumnSecondary: true});
+				    }.bind(this));	
 			   }.bind(this));
-
-        $(this.refs.locationSecondary).autocomplete({
-            source: doubles
-        });
-        $('#searchForSecondary').on('autocompleteselect', function (e, ui) {
-	    		var location = $.extend({}, this.state.location);
-	        location.locationSecondary = ui.item.value;
-	     		this.setState({location:location, showColumnSecondary: true});
-		    }.bind(this));	
     }.bind(this), 'json');
 },
 render: function(){
@@ -152,18 +174,19 @@ render: function(){
               <label> Location: < /label>  
          </div>
           <div className="col-xs-6">
-              <input type='text' id="searchForPrimary" placeholder="Enter location" ref="locationPrimary" / >
+              <input type='text' id="searchForPrimary" placeholder="Enter location" ref="locationPrimary"/>
            </div>
         </div>
-
-        <div className="row">
-         <div className="col-xs-offset-1 col-xs-3">
-              <label> Compare: < /label>  
-         </div>
-          <div className="col-xs-6">
-              <input type='text' id="searchForSecondary" placeholder="City For Comparison" ref="locationSecondary" / >
-           </div>
-        </div>
+				{this.state.showComparisonInput ?
+	        <div className="row">
+	         <div className="col-xs-offset-1 col-xs-3">
+	              <label> Compare: < /label>  
+	         </div>
+	          <div className="col-xs-6">
+	              <input type='text' id="searchForSecondary" onChange ={this.handleOnchangeSecondary} placeholder="City For Comparison" ref="locationSecondary"/>
+	           </div>
+	        </div>
+        : null }
         {this.state.showTable ? <PriceTable location = {this.state.location} showColumnSecondary = {this.state.showColumnSecondary}/> : null}
         
       </div>
