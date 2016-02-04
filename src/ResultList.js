@@ -82,7 +82,6 @@ var EmptyResults = React.createClass({
     return(
       <div>
         <p>We are sorry, but there are no results for these criterias</p>
-
       </div>
     );
   }
