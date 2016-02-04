@@ -114,4 +114,11 @@ body {
   color: #F3843E;
   text-decoration: none;
 }
+
+.advice .panel-heading {
+  color: white;
+}
+
+.advice .panel-default {
+  margin-top:10px;
 }

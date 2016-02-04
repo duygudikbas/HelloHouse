@@ -43,7 +43,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -74,7 +76,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Apartment building",
@@ -97,7 +101,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -129,7 +135,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160131",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -171,7 +179,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160104",
+      "lastModificationDate": "20160104"
     },
     {
       "type": "Flat for sale",
@@ -201,7 +211,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160119"
     },
     {
       "type": "Investment property for sale",
@@ -249,7 +261,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150204",
+      "lastModificationDate": "20150228"
     },
     {
       "type": "Office for sale",
@@ -271,7 +285,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160126",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -326,7 +342,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160108",
+      "lastModificationDate": "20160109"
     },
     {
       "type": "Flat for sale",
@@ -355,7 +373,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150104",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Mutiple listings on",
@@ -376,7 +396,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -404,7 +426,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -444,7 +468,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150925",
+      "lastModificationDate": "20161026"
     },
     {
       "type": "Flat for sale",
@@ -480,7 +506,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160103",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Mutiple listings on",
@@ -502,7 +530,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151104",
+      "lastModificationDate": "20151208"
     },
     {
       "type": "Flat for sale",
@@ -538,7 +568,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160127"
     },
     {
       "type": "House for sale",
@@ -565,7 +597,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160104",
+      "lastModificationDate": "20160118"
     },
     {
       "type": "Mutiple listings on",
@@ -587,7 +621,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -635,7 +671,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160117",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Flat for sale",
@@ -671,7 +709,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160108",
+      "lastModificationDate": "20160129"
     },
     {
       "type": "Flat for sale",
@@ -701,7 +741,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160116",
+      "lastModificationDate": "20160124"
     },
     {
       "type": "House for sale",
@@ -752,7 +794,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160105",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -794,7 +838,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -824,7 +870,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -855,7 +903,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -884,7 +934,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -926,7 +978,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -957,7 +1011,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -988,7 +1044,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160118",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -1017,7 +1075,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Flat for sale",
@@ -1045,7 +1105,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160108",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "New build project:",
@@ -1082,7 +1144,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160113",
+      "lastModificationDate": "20160113"
     },
     {
       "type": "Flat for sale",
@@ -1109,7 +1173,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160128",
+      "lastModificationDate": "20160128"
     },
     {
       "type": "Flat for sale",
@@ -1133,7 +1199,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160129",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -1174,7 +1242,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -1211,7 +1281,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -1241,7 +1313,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "Flat for sale",
@@ -1272,7 +1346,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160105",
+      "lastModificationDate": "20160125"
     },
     {
       "type": "Flat for sale",
@@ -1304,7 +1380,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160129"
     },
     {
       "type": "flat",
@@ -1323,7 +1401,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -1357,7 +1437,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160123",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Mutiple listings on",
@@ -1378,7 +1460,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -1406,7 +1490,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -1445,7 +1531,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -1476,7 +1564,9 @@
       "garage": true,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Multi-unit property",
@@ -1498,7 +1588,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Apartment building",
@@ -1525,7 +1617,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -1562,7 +1656,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160106",
+      "lastModificationDate": "20160120"
     },
     {
       "type": "House for sale",
@@ -1604,7 +1700,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -1639,7 +1737,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "House for sale",
@@ -1678,7 +1778,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -1723,7 +1825,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160110",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -1749,7 +1853,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160118",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Apartment building",
@@ -1772,7 +1878,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160129",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "House for sale",
@@ -1805,7 +1913,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -1839,7 +1949,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -1868,7 +1980,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -1899,7 +2013,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Apartment building",
@@ -1921,7 +2037,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -1952,7 +2070,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -1989,7 +2109,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160131",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -2014,7 +2136,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160119",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -2046,7 +2170,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Land for sale",
@@ -2069,7 +2195,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150407",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Investment property for sale",
@@ -2101,7 +2229,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "House for sale",
@@ -2133,7 +2263,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -2169,7 +2301,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -2201,7 +2335,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -2235,7 +2371,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -2263,7 +2401,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160110",
+      "lastModificationDate": "20160111"
     },
     {
       "type": "Flat for sale",
@@ -2292,7 +2432,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160124",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Office for sale",
@@ -2327,7 +2469,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -2356,7 +2500,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -2388,7 +2534,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160107",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -2423,7 +2571,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160131",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -2457,7 +2607,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Parking for sale",
@@ -2476,7 +2628,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160110",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -2504,7 +2658,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150122",
+      "lastModificationDate": "20150122"
     },
     {
       "type": "Flat for sale",
@@ -2534,7 +2690,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -2560,7 +2718,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160120",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -2596,7 +2756,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160126",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Multi-unit property",
@@ -2647,7 +2809,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "Flat for sale",
@@ -2682,7 +2846,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Apartment building",
@@ -2704,7 +2870,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160102",
+      "lastModificationDate": "20160109"
     },
     {
       "type": "Flat for sale",
@@ -2735,7 +2903,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160123",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -2774,7 +2944,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -2807,7 +2979,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160106",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Land for sale",
@@ -2828,7 +3002,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160123",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -2864,7 +3040,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160116",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Investment property for sale",
@@ -2889,7 +3067,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -2921,7 +3101,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160220"
     },
     {
       "type": "Office for sale",
@@ -2953,7 +3135,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Office for sale",
@@ -2974,7 +3158,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160107",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -3004,7 +3190,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150521",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -3039,7 +3227,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151002",
+      "lastModificationDate": "20151201"
     },
     {
       "type": "Flat for sale",
@@ -3072,7 +3262,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160129",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "House for sale",
@@ -3105,7 +3297,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -3142,7 +3336,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -3179,7 +3375,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -3215,7 +3413,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150612",
+      "lastModificationDate": "20160101"
     },
     {
       "type": "Investment property for sale",
@@ -3247,7 +3447,9 @@
       "garage": true,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Flat for sale",
@@ -3279,7 +3481,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Apartment building",
@@ -3300,7 +3504,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Apartment building",
@@ -3322,7 +3528,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -3356,7 +3564,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Investment property for sale",
@@ -3404,7 +3614,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Investment property for sale",
@@ -3440,7 +3652,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151109",
+      "lastModificationDate": "20160104"
     },
     {
       "type": "Investment property for sale",
@@ -3479,7 +3693,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160120",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Warehouse for sale",
@@ -3510,7 +3726,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -3532,7 +3750,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150109",
+      "lastModificationDate": "20150109"
     },
     {
       "type": "Flat for sale",
@@ -3570,7 +3790,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160119"
     },
     {
       "type": "Flat for sale",
@@ -3621,7 +3843,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -3658,7 +3882,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160110",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -3687,7 +3913,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160115"
     },
     {
       "type": "House for sale",
@@ -3720,7 +3948,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160126",
+      "lastModificationDate": "20160127"
     },
     {
       "type": "House for sale",
@@ -3771,7 +4001,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160127",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Mutiple listings on",
@@ -3792,7 +4024,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151129",
+      "lastModificationDate": "20151230"
     },
     {
       "type": "Mutiple listings on",
@@ -3813,7 +4047,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151103",
+      "lastModificationDate": "20160120"
     },
     {
       "type": "Flat for sale",
@@ -3842,7 +4078,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -3881,7 +4119,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -3905,7 +4145,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160116",
+      "lastModificationDate": "20160125"
     },
     {
       "type": "Flat for sale",
@@ -3939,7 +4181,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150109",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Flat for sale",
@@ -3964,7 +4208,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -3998,7 +4244,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151109",
+      "lastModificationDate": "20160121"
     },
     {
       "type": "House for sale",
@@ -4040,7 +4288,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160111",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -4073,7 +4323,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -4112,7 +4364,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -4141,7 +4395,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160129",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "House for sale",
@@ -4173,7 +4429,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -4207,7 +4465,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160115",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Flat for sale",
@@ -4241,7 +4501,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160111",
+      "lastModificationDate": "20160112"
     },
     {
       "type": "Flat for sale",
@@ -4271,7 +4533,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160126",
+      "lastModificationDate": "20160129"
     },
     {
       "type": "Flat for sale",
@@ -4320,7 +4584,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150814",
+      "lastModificationDate": "20150901"
     },
     {
       "type": "House for sale",
@@ -4359,7 +4625,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150604",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Office for sale",
@@ -4385,7 +4653,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Parking for sale",
@@ -4407,7 +4677,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160117",
+      "lastModificationDate": "20160119"
     },
     {
       "type": "Flat for sale",
@@ -4434,7 +4706,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160117",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "Office for sale",
@@ -4456,7 +4730,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151109",
+      "lastModificationDate": "20151201"
     },
     {
       "type": "Flat for sale",
@@ -4490,7 +4766,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -4525,7 +4803,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151219",
+      "lastModificationDate": "20151220"
     },
     {
       "type": "House for sale",
@@ -4554,7 +4834,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150111",
+      "lastModificationDate": "20160127"
     },
     {
       "type": "Flat for sale",
@@ -4588,7 +4870,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150808",
+      "lastModificationDate": "20150907"
     },
     {
       "type": "Office for sale",
@@ -4617,7 +4901,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Office for sale",
@@ -4649,7 +4935,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160120",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -4676,7 +4964,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -4709,7 +4999,10 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+    "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151009",
+      "lastModificationDate": "20151123"
     },
     {
       "type": "Flat for sale",
@@ -4744,7 +5037,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Store for sale",
@@ -4778,7 +5073,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160128",
+      "lastModificationDate": "20160129"
     },
     {
       "type": "House for sale",
@@ -4806,7 +5103,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151001",
+      "lastModificationDate": "20151003"
     },
     {
       "type": "Flat for sale",
@@ -4841,7 +5140,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151231",
+      "lastModificationDate": "20160105"
     },
     {
       "type": "Flat for sale",
@@ -4878,7 +5179,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151220",
+      "lastModificationDate": "20160105"
     },
     {
       "type": "House for sale",
@@ -4907,7 +5210,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160111",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "House for sale",
@@ -4940,7 +5245,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151124",
+      "lastModificationDate": "20160124"
     },
     {
       "type": "Apartment building",
@@ -4963,7 +5270,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150510",
+      "lastModificationDate": "20150921"
     },
     {
       "type": "Warehouse for sale",
@@ -4988,7 +5297,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150926",
+      "lastModificationDate": "20160110"
     },
     {
       "type": "Store for sale",
@@ -5014,7 +5325,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160105",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -5044,7 +5357,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160105",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -5080,7 +5395,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160118",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -5109,7 +5426,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150309",
+      "lastModificationDate": "20160113"
     },
     {
       "type": "House for sale",
@@ -5132,7 +5451,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160104",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -5165,7 +5486,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151123",
+      "lastModificationDate": "20160106"
     },
     {
       "type": "Flat for sale",
@@ -5205,7 +5528,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -5227,7 +5552,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150926",
+      "lastModificationDate": "20151023"
     },
     {
       "type": "Flat for sale",
@@ -5248,7 +5575,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -5289,7 +5618,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151010",
+      "lastModificationDate": "20161123"
     },
     {
       "type": "Flat for sale",
@@ -5324,7 +5655,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "Land for sale",
@@ -5349,7 +5682,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -5387,7 +5722,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160120",
+      "lastModificationDate": "20160125"
     },
     {
       "type": "Land for sale",
@@ -5411,7 +5748,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160121",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "Flat for sale",
@@ -5452,7 +5791,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "House for sale",
@@ -5497,7 +5838,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151214",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "House for sale",
@@ -5535,7 +5878,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Office for sale",
@@ -5561,7 +5906,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151130",
+      "lastModificationDate": "20151214"
     },
     {
       "type": "Apartment building",
@@ -5582,7 +5929,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151223",
+      "lastModificationDate": "20160116"
     },
     {
       "type": "House for sale",
@@ -5608,7 +5957,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20140611",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Office for sale",
@@ -5641,7 +5992,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150615",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Mutiple listings on",
@@ -5663,7 +6016,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151026",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "New build project:",
@@ -5690,7 +6045,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160102",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "House for sale",
@@ -5732,7 +6089,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160113",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Apartment building",
@@ -5753,7 +6112,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Flat for sale",
@@ -5781,7 +6142,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151024",
+      "lastModificationDate": "20151212"
     },
     {
       "type": "Flat for sale",
@@ -5813,7 +6176,9 @@
       "garage": true,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -5848,7 +6213,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -5875,7 +6242,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150126",
+      "lastModificationDate": "20150419"
     },
     {
       "type": "Flat for sale",
@@ -5905,7 +6274,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151209",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "House for sale",
@@ -5937,7 +6308,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160115",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -5969,7 +6342,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160128",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -5999,7 +6374,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150816",
+      "lastModificationDate": "20151127"
     },
     {
       "type": "Flat for sale",
@@ -6039,7 +6416,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160112",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Flat for sale",
@@ -6068,7 +6447,9 @@
       "garage": true,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160127",
+      "lastModificationDate": "20160128"
     },
     {
       "type": "House for sale",
@@ -6096,7 +6477,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -6125,7 +6508,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151025",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "House for sale",
@@ -6160,7 +6545,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160105",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "House for sale",
@@ -6182,7 +6569,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151224",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -6212,7 +6601,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150927",
+      "lastModificationDate": "20151103"
     },
     {
       "type": "Investment property for sale",
@@ -6253,7 +6644,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160104",
+      "lastModificationDate": "20160109"
     },
     {
       "type": "Flat for sale",
@@ -6288,7 +6681,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150812",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -6317,7 +6712,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Flat for sale",
@@ -6344,7 +6741,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -6375,7 +6774,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151024",
+      "lastModificationDate": "20151223"
     },
     {
       "type": "House for sale",
@@ -6401,7 +6802,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151010",
+      "lastModificationDate": "20151201"
     },
     {
       "type": "Flat for sale",
@@ -6435,7 +6838,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160124",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -6464,7 +6869,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "Flat for sale",
@@ -6492,7 +6899,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160125",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -6519,7 +6928,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160114"
     },
     {
       "type": "Flat for sale",
@@ -6547,7 +6958,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160109"
     },
     {
       "type": "House for sale",
@@ -6588,7 +7001,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160123",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Apartment building",
@@ -6609,7 +7024,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151024",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Flat for sale",
@@ -6651,7 +7068,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160120",
+      "lastModificationDate": "20160120"
     },
     {
       "type": "Flat for sale",
@@ -6685,7 +7104,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151126",
+      "lastModificationDate": "20151126"
     },
     {
       "type": "Flat for sale",
@@ -6715,7 +7136,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160123",
+      "lastModificationDate": "20160125"
     },
     {
       "type": "Flat for sale",
@@ -6760,7 +7183,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151002",
+      "lastModificationDate": "20151120"
     },
     {
       "type": "Flat for sale",
@@ -6793,7 +7218,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151030",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Flat for sale",
@@ -6822,7 +7249,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160114",
+      "lastModificationDate": "20160114"
     },
     {
       "type": "Flat for sale",
@@ -6853,7 +7282,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151124",
+      "lastModificationDate": "20151124"
     },
     {
       "type": "Flat for sale",
@@ -6883,7 +7314,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150810",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -6911,7 +7344,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151123",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -6942,7 +7377,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151231",
+      "lastModificationDate": "20160125"
     },
     {
       "type": "Parking for sale",
@@ -6963,7 +7400,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Mutiple listings on",
@@ -6984,7 +7423,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150621",
+      "lastModificationDate": "20150731"
     },
     {
       "type": "Multi-unit property",
@@ -7005,7 +7446,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Warehouse for sale",
@@ -7027,7 +7470,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151023",
+      "lastModificationDate": "20160105"
     },
     {
       "type": "Office for sale",
@@ -7055,7 +7500,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151221",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Mutiple listings on",
@@ -7076,7 +7523,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151218",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Office for sale",
@@ -7105,7 +7554,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151219",
+      "lastModificationDate": "20151219"
     },
     {
       "type": "Mutiple listings on",
@@ -7123,7 +7574,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151026",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Office for sale",
@@ -7152,7 +7605,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151124",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Mutiple listings on",
@@ -7173,7 +7628,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151224",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Apartment building",
@@ -7195,7 +7652,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160105",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "House for sale",
@@ -7226,7 +7685,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160128",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -7260,7 +7721,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150726",
+      "lastModificationDate": "20160126"
     },
     {
       "type": "Flat for sale",
@@ -7295,7 +7758,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151029",
+      "lastModificationDate": "20151029"
     },
     {
       "type": "House for sale",
@@ -7318,7 +7783,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160119",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -7356,7 +7823,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160128"
     },
     {
       "type": "Flat for sale",
@@ -7386,7 +7855,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150930",
+      "lastModificationDate": "20160123"
     },
     {
       "type": "Flat for sale",
@@ -7417,7 +7888,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151224",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -7447,7 +7920,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160106",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -7478,7 +7953,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150609",
+      "lastModificationDate": "20150609"
     },
     {
       "type": "Apartment building",
@@ -7499,7 +7976,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160129",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -7526,7 +8005,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151024",
+      "lastModificationDate": "20151024"
     },
     {
       "type": "House for sale",
@@ -7562,7 +8043,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151017",
+      "lastModificationDate": "20151017"
     },
     {
       "type": "House for sale",
@@ -7600,7 +8083,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151126",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Land for sale",
@@ -7622,7 +8107,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Apartment building",
@@ -7644,7 +8131,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Multi-unit property",
@@ -7675,7 +8164,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Investment property for sale",
@@ -7703,7 +8194,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160111",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Investment property for sale",
@@ -7732,7 +8225,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "New build project:",
@@ -7791,7 +8286,9 @@
       "garage": true,
       "garden": false,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -7824,7 +8321,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Land for sale",
@@ -7846,7 +8345,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Apartment building",
@@ -7870,7 +8371,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160104",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -7903,7 +8406,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Mutiple listings on",
@@ -7927,7 +8432,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -7959,7 +8466,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -7992,7 +8501,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -8027,7 +8538,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "House for sale",
@@ -8050,7 +8563,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151027",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -8084,7 +8599,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -8116,7 +8633,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Flat for sale",
@@ -8152,7 +8671,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160109"
     },
     {
       "type": "Flat for sale",
@@ -8181,7 +8702,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160116",
+      "lastModificationDate": "20160117"
     },
     {
       "type": "House for sale",
@@ -8222,7 +8745,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20150924",
+      "lastModificationDate": "20150924"
     },
     {
       "type": "Apartment building",
@@ -8244,7 +8769,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160104",
+      "lastModificationDate": "20160104"
     },
     {
       "type": "Apartment building",
@@ -8267,7 +8794,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151223",
+      "lastModificationDate": "20151223"
     },
     {
       "type": "Investment property for sale",
@@ -8309,7 +8838,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -8348,7 +8879,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151228",
+      "lastModificationDate": "20151228"
     },
     {
       "type": "House for sale",
@@ -8376,7 +8909,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160116",
+      "lastModificationDate": "20160116"
     },
     {
       "type": "Flat for sale",
@@ -8407,7 +8942,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -8437,7 +8974,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160203",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -8472,7 +9011,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151112",
+      "lastModificationDate": "20151112"
     },
     {
       "type": "Land for sale",
@@ -8491,7 +9032,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Land for sale",
@@ -8510,7 +9053,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20150412",
+      "lastModificationDate": "20150412"
     },
     {
       "type": "Land for sale",
@@ -8529,7 +9074,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160103",
+      "lastModificationDate": "20160103"
     },
     {
       "type": "Land for sale",
@@ -8548,7 +9095,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Land for sale",
@@ -8567,7 +9116,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151119",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "Land for sale",
@@ -8586,7 +9137,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20161025",
+      "lastModificationDate": "20161025"
     },
     {
       "type": "Land for sale",
@@ -8605,7 +9158,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Land for sale",
@@ -8624,7 +9179,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151121",
+      "lastModificationDate": "20151121"
     },
     {
       "type": "Land for sale",
@@ -8643,7 +9200,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160124",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Land for sale",
@@ -8662,7 +9221,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "Land for sale",
@@ -8681,7 +9242,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160130",
+      "lastModificationDate": "20160130"
     },
     {
       "type": "House for sale",
@@ -8714,7 +9277,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151024",
+      "lastModificationDate": "20151024"
     },
     {
       "type": "Office for sale",
@@ -8738,7 +9303,9 @@
       "garage": false,
       "garden": false,
       "pool": true,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -8776,7 +9343,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160116",
+      "lastModificationDate": "20160116"
     },
     {
       "type": "Flat for sale",
@@ -8810,7 +9379,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160123",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -8846,7 +9417,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160117",
+      "lastModificationDate": "20160203"
     },
     {
       "type": "House for sale",
@@ -8870,7 +9443,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -8903,7 +9478,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151129",
+      "lastModificationDate": "20151129"
     },
     {
       "type": "Flat for sale",
@@ -8932,7 +9509,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160110",
+      "lastModificationDate": "20160110"
     },
     {
       "type": "Apartment building",
@@ -8955,7 +9534,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160202",
+      "lastModificationDate": "20160202"
     },
     {
       "type": "Flat for sale",
@@ -8988,7 +9569,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160109",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Parking for sale",
@@ -9007,7 +9590,9 @@
       "garage": false,
       "garden": true,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20151212",
+      "lastModificationDate": "20151212"
     },
     {
       "type": "Flat for sale",
@@ -9039,7 +9624,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151225",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -10003,7 +10590,9 @@
       "garage": false,
       "garden": true,
       "pool": true,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Investment property for sale",
@@ -10627,7 +11216,9 @@
       "garage": true,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20160204",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "Flat for sale",
@@ -10715,7 +11306,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+      "firstPublicationDate": "20151219",
+      "lastModificationDate": "201600124"
     },
     {
       "type": "Flat for sale",
@@ -10930,9 +11523,9 @@
       "pool": false,
       "bedrooms": 1
     },
-    {
+    {   
       "type": "House for sale",
-      "id": 359,
+      "id": 359,    
       "url": "https://www.realo.be/en/1500-halle/5194053?l=1844287955\n",
       "coordinates": [
         50.73248479999999,
@@ -10956,7 +11549,9 @@
       "garage": true,
       "garden": true,
       "pool": false,
-      "bedrooms": 1
+      "bedrooms": 1,
+       "firstPublicationDate": "20160201",
+      "lastModificationDate": "20160204"
     },
     {
       "type": "House for sale",
@@ -12242,7 +12837,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20160131",
+      "lastModificationDate": "20160201"
     },
     {
       "type": "Flat for sale",
@@ -13213,7 +13810,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 2
+      "bedrooms": 2,
+      "firstPublicationDate": "20160117",
+      "lastModificationDate": "20160117"
     },
     {
       "type": "Flat for sale",
@@ -13932,7 +14531,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20150121",
+      "lastModificationDate": "20160131"
     },
     {
       "type": "House for sale",
@@ -15247,7 +15848,9 @@
       "garage": false,
       "garden": false,
       "pool": false,
-      "bedrooms": 3
+      "bedrooms": 3,
+      "firstPublicationDate": "20151209",
+      "lastModificationDate": "20160124"
     },
     {
       "type": "Flat for sale",
