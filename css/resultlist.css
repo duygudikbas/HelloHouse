@@ -59,15 +59,39 @@
   .ribbonnew{
      
         color: green;
-        padding: 10px;
+      
         overflow: hidden;
         position: relative;
-
+text-align: center;
+height: 100%;
 
   }
  .ribbonnew:after {
         position: absolute;
-        content: "Boss";
+        content: attr(title);
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+        background: pink;
+
+        font-weight: bold;
+
+        box-shadow: 5px 5px 20px #888888;
+    }
+     .info{
+     
+        color: green;
+        padding: 10px;
+        overflow: hidden;
+        position: relative;
+text-align: center;
+
+  }
+ .info:after {
+        position: absolute;
+        content: attr(title);
         top: 10px;
         left: -27px;
         height: 30px;
@@ -76,7 +100,7 @@
         background: pink;
 
         font-weight: bold;
-        transform: rotate(-45deg);
+    transform: rotate(-45deg);  
         box-shadow: 5px 5px 20px #888888;
     }
   ul {

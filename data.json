@@ -4999,7 +4999,6 @@
       "garage": false,
       "garden": false,
       "pool": false,
-    "bedrooms": 3
       "bedrooms": 3,
       "firstPublicationDate": "20151009",
       "lastModificationDate": "20151123"
@@ -11523,9 +11522,9 @@
       "pool": false,
       "bedrooms": 1
     },
-    {   
+    {
       "type": "House for sale",
-      "id": 359,    
+      "id": 359,
       "url": "https://www.realo.be/en/1500-halle/5194053?l=1844287955\n",
       "coordinates": [
         50.73248479999999,
@@ -11550,7 +11549,7 @@
       "garden": true,
       "pool": false,
       "bedrooms": 1,
-       "firstPublicationDate": "20160201",
+      "firstPublicationDate": "20160201",
       "lastModificationDate": "20160204"
     },
     {

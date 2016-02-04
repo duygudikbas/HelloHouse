@@ -28,7 +28,8 @@ render: function(){
     var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
-    var elemId = "estate"+this.props.estate.id
+    var elemId = "estate"+this.props.estate.id;
+    var location=this.props.estate.location;
     if (price) {price += " €"};
 
     var divStyle = {
@@ -37,19 +38,19 @@ render: function(){
   backgroundSize: "cover"
  
 };
-var nameofclass="liResultList ";
+var nameofclass="liResultList  ";
 if(true)
 {
-  nameofclass+="ribbonnew"
+  nameofclass+="info "
 }
     return(
       <Link to={urlTo} >
-        <li key={this.props.estate.id}  style={divStyle} id={elemId} className={nameofclass}>
-          <p className="location"> {this.props.estate.location  } </p>
-
-          <p className="price">&nbsp;{price}</p>
+        <li key={this.props.estate.id}  title={price}  style={divStyle} description={location} id={elemId} className={nameofclass}>
+         <div className="ribbonnew" title={location}>
+         
          
           {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
+       </div>
         </li>
       </Link>
     );

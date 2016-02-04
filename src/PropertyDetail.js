@@ -4,11 +4,22 @@ var Link = require('react-router').Link;
 
 var PropertyDetail = React.createClass({
   getInitialState: function() {
-    return {estate: {image: [], properties:[], location: ""}};
+    return {estate: {
+      image: [], 
+      properties:[], 
+      location: "", 
+      surface : "",
+      garage : false,
+      garden : false,
+      pool : false,
+      bedrooms : 0,
+      price: ""
+    }};
+
   },
   componentWillMount: function() {
     var estateId = this.props.params.id;
-    var url = "http://estates-api.herokuapp.com/estates"+"/"+estateId;
+    var url = "http://localhost:3000/estates"+"/"+estateId;
     $.get(url, function(data) { 
          this.setState({estate: data});
       }.bind(this));
@@ -56,6 +67,14 @@ var PropertyDetail = React.createClass({
   },
 
   render: function(){
+    var price = this.state.estate.price;
+    if (price.length > 0){price += " €"}
+      else {price = "Unknown price"}
+    var attributes = "";
+    if (this.state.estate.garage) attributes += "Garage ";
+    if (this.state.estate.garden) attributes += "Garden ";
+    if (this.state.estate.pool) attributes += "Pool ";
+
     return(
       <div className="container propertyDetail">
         <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link> 
@@ -87,17 +106,15 @@ var PropertyDetail = React.createClass({
             </div>
           </div>
           <div className="row">
-            <div className="col-xs-6">
+            <div>
               <ul id="insidePropertyDetail">
-                <li id="price">{this.state.estate.price}</li>
+                <li id="price">{price}</li>
+                <li id="surface">Surface : {this.state.estate.surface}</li>
+                <li id="bedrooms">Bedrooms : {this.state.estate.bedrooms}</li>
+                <li id="attributes">{attributes}</li>
               </ul>
             </div>
-             <div className="col-xs-6">
-              <ul id="outsidePropertyDetail">
-                <li>{this.state.estate.properties[0]}</li>
-                <li>{this.state.estate.properties[0]}</li>
-              </ul>
-            </div>
+
           </div>
           <div className="row">
             <a href={this.createURLWithCoordinates()} id="mapLink">Locate on Map</a>
