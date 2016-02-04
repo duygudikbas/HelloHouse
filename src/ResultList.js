@@ -24,40 +24,30 @@ var RemoveFromFavoritesButton = React.createClass({
 });
 
 var AResult = React.createClass({
-
-  getLocation: function(){
-      if(this.props.estate.location.indexOf('Undisclosed address in ') !== -1) {
-        return this.props.estate.location.replace('Undisclosed address in ', '' );
-      }
-
-      if(this.props.estate.location.indexOf('Address not disclosed') !== -1) {
-        return this.props.estate.location.replace('Address not disclosed', '' );
-      } 
-
-      if(this.props.estate.location.indexOf('Undisclosed number in ') !== -1) {
-        return this.props.estate.location.replace('Undisclosed number in ', '' );
-      } 
-
-      return this.props.estate.location;      
-  },
 render: function(){
     var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     var elemId = "estate"+this.props.estate.id
     if (price) {price += " €"};
+
     var divStyle = {
  
   backgroundImage: "url("+this.props.estate.image[0] +")"
  
 };
-
+var nameofclass="liResultList ";
+if(true)
+{
+  nameofclass+="ribbonnew"
+}
     return(
       <Link to={urlTo} >
-        <li key={this.props.estate.id}  style={divStyle} id={elemId} className="liResultList">
-          <p className="location"> { this.getLocation() } </p>
+        <li key={this.props.estate.id}  style={divStyle} id={elemId} className={nameofclass}>
+          <p className="location"> {this.props.estate.location  } </p>
+
           <p className="price">&nbsp;{price}</p>
-       
+         
           {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
         </li>
       </Link>
@@ -114,7 +104,7 @@ var ResultList = React.createClass({
     if (index >= 0){
       //favorites
       $.get("http://localhost:3000/favorites", function(favorites) {
-        var urlFavorites = "http://estates-api.herokuapp.com/estates?id=";
+        var urlFavorites = "http://localhost:3000/estates?id=";
         var favList = favorites.map(function(favory){
           return favory.id;
         }).join('&id=');
@@ -124,7 +114,7 @@ var ResultList = React.createClass({
         }.bind(this), 'json');
       }.bind(this), 'json');
     }else {
-      var url = "http://estates-api.herokuapp.com/estates";
+      var url = "http://localhost:3000/estates";
       $.get(url, function(data) {
       this.setState({estates: data});
     }.bind(this), 'json');
@@ -133,31 +123,38 @@ var ResultList = React.createClass({
 
   handleRemoveFavorite: function(id) {
     var favorites = this.state.estates.slice();
-    console.log("remove favorites");
-    console.log(favorites);
     var estate = favorites.filter(function(favorite) {return favorite.id === id});
-    console.log(estate);
     if (estate.length > 0) {
       var index = favorites.indexOf(estate[0]);
-      console.log("index:" + index);
       favorites.splice(index, 1);
-      console.log(favorites);
       this.setState({estates: favorites});
     }
   },
 
   filter : function(estate){
-    if (this.props.filter.minPrice > 0 && this.props.filter.minPrice > estate.price){ return false; };
-    if (this.props.filter.maxPrice > 0 &&this.props.filter.maxPrice < estate.price){ return false; };
+    if (Number(this.props.filter.minPrice) > 0 && Number(this.props.filter.minPrice) > Number(estate.price)){ return false; };
+    if (Number(this.props.filter.maxPrice) > 0 && Number(this.props.filter.maxPrice) < Number(estate.price)){ return false; };
 
     if ((this.props.filter.location !== null && this.props.filter.location.length > 0) && (estate.location.indexOf(this.props.filter.location) === -1)){ return false; };
 
+    if ((this.props.filter.minSurface) && (Number(this.props.filter.minSurface) > Number(estate.surface))){ return false; };
+    if ((this.props.filter.maxSurface) && (Number(this.props.filter.maxSurface) < Number(estate.surface))){ return false; };
+    
+    if ((this.props.filter.minRoom) && (Number(this.props.filter.minRoom) > Number(estate.bedrooms))){ return false; };
+    if ((this.props.filter.maxRoom) && (Number(this.props.filter.maxRoom) < Number(estate.bedrooms))){ return false; };
+   
+    if (estate.type !== "Flat for sale" && estate.type !== "House for sale"){return false};
+
+    if (this.props.filter.appartment === false && estate.type === "Flat for sale" ){ return false; };
+    if (this.props.filter.house === false && estate.type === "House for sale" ){ return false; };
+
+    if (this.props.filter.garage !== estate.garage){ return false; };
+    if (this.props.filter.garden !== estate.garden){ return false; };
+    if (this.props.filter.pool !== estate.pool){ return false; };
+
+
         // var filter = { 
 
-        //         minRoom :minRoom,
-        //         maxRoom : maxRoom,
-        //         minSurface : minSurface,
-        //         maxSurface : maxSurface,
         //         garden : garden,
         //         garage : garage,
         //         pool : pool, 
@@ -186,8 +183,7 @@ var ResultList = React.createClass({
     }.bind(this)); 
 
     return(
-      <div className="container">   
-        <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>     
+      <div className="container">        
          { index > -1 ? <h1>Favorites</h1> : <h1>Propositions</h1>}
          { numberWarning > 0 ? <div><NumberWarning numberWarning = {numberWarning}/><ul className="ulResultList">{resultElems}</ul></div> : <EmptyResults/> }
       </div>
