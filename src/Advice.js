@@ -1,5 +1,6 @@
 var React = require('react');
 var Link = require('react-router').Link;
+var $ = require('jquery');
 
 var UserInformation = React.createClass({
 	render : function(){
@@ -18,6 +19,7 @@ var Advice = React.createClass({
 	  },	   
 	  HandleOnQustionSubmit: function(){
 	  	 this.setState({showInfoDiv: true});
+	  	 $('html, body').animate({ scrollTop: 0 }, 0);
 	  },
 	  render: function(){
 	  	console.log("render");
