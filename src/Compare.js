@@ -183,7 +183,7 @@ render: function(){
     return(
       <div className="container compare"> 
         <Link to="/" className="homeLink" ><i className="fa fa-home"></i>&nbsp; Home</Link>
-				<div className="row">
+				<div className="row" id="firstRow">
          <div className="col-xs-offset-1 col-xs-3">
               <label> Location: < /label>  
          </div>
