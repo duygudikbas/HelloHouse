@@ -51,10 +51,14 @@ render: function(){
   backgroundImage: "url("+this.props.estate.image[0] +")"
  
 };
-
+var nameofclass="liResultList ";
+if(true)
+{
+  nameofclass+="ribbonnew"
+}
     return(
       <Link to={urlTo} >
-        <li key={this.props.estate.id}  style={divStyle} id={elemId} className="liResultList">
+        <li key={this.props.estate.id}  style={divStyle} id={elemId} className={nameofclass}>
           <p className="location"> { this.getLocation() } </p>
           <p className="price">&nbsp;{price}</p>
        
