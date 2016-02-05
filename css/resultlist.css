@@ -54,61 +54,58 @@
 .liResultList.remove {
   }
   .ribbonnew{
-     
-        position: absolute;
-        text-align: center;
-        bottom: 5px;
-        left: 5px;
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    left: 5px;
     right: 5px;
-        height: 60px;
-        
-        line-height: 30px;
-        background: pink;
-
-        font-weight: bold;
-
-        box-shadow: 5px 5px 20px #888888;
- text-align: center;
-  vertical-align: middle; 
+    height: 60px;
+    line-height: 30px;
+    background: pink;
+    font-weight: bold;
+    box-shadow: 5px 5px 20px #888888;
+    text-align: center;
+    vertical-align: middle; 
+  background-image: -webkit-linear-gradient(rgba(235,250,238,1) 0%, rgba(213,241,222,1) 30%, rgba(209,239,219,1) 36%, rgba(198,235,207,1) 51%, rgba(192,234,198,1) 88%, rgba(190,234,195,1) 100%);
+  background-image: -o-linear-gradient(rgba(235,250,238,1) 0%, rgba(213,241,222,1) 30%, rgba(209,239,219,1) 36%, rgba(198,235,207,1) 51%, rgba(192,234,198,1) 88%, rgba(190,234,195,1) 100%);
+  background-image: linear-gradient(rgba(235,250,238,1) 0%, rgba(213,241,222,1) 30%, rgba(209,239,219,1) 36%, rgba(198,235,207,1) 51%, rgba(192,234,198,1) 88%, rgba(190,234,195,1) 100%);
   }
 
-     .info{
-     
-        color: green;
-        padding: 10px;
-        overflow: hidden;
-        position: relative;
-text-align: center;
-
+  .info{
+    color: green;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
   }
  .info:after {
-        position: absolute;
-        content: attr(title);
-        top: 10px;
-        left: -27px;
-        height: 30px;
-        width: 100px;
-        line-height: 30px;
-        background: pink;
+    position: absolute;
+    content: attr(title);
+    top: 10px;
+    left: -27px;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    background: pink;
 
-        font-weight: bold;
-        transform: rotate(-45deg);  
-        box-shadow: 5px 5px 20px #888888;
+    font-weight: bold;
+    transform: rotate(-45deg);  
+    box-shadow: 5px 5px 20px #888888;
+    background: -webkit-linear-gradient(top, rgba(235,250,238,1) 0%, rgba(213,241,222,1) 30%, rgba(209,239,219,1) 36%, rgba(198,235,207,1) 51%, rgba(192,234,198,1) 88%, rgba(190,234,195,1) 100%);
     }
   ul {
-        margin-top: 40px;
+    margin-top: 40px;
     }
 #refineCriteriaActionEmptyResult
 {
-     font-size: 17px;
-    padding-left: 26%;
-        color: rgba(121,166,63,1);
+  font-size: 17px;
+  padding-left: 26%;
+  color: rgba(121,166,63,1);
 }
 
 .spanRibbon1Line{
   display: inline-block;
   height: 100%;
-
   margin-top: 14px;
 
 }
