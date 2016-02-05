@@ -39,14 +39,27 @@ render: function(){
  
 };
 var nameofclass="liResultList  ";
-if(true)
-{
-  nameofclass+="info "
+var publishDate = this.props.estate.firstPublicationDate;
+var adaptDate = this.props.estate.lastModificationDate;
+var newAdaptText = "";
+if (publishDate){
+    if (Number(publishDate) > 20160202){
+      nameofclass+="info ";
+      newAdaptText = "New";
+    }else if (adaptDate){
+      if (Number(adaptDate) > 20160202){
+        nameofclass+="info ";
+        newAdaptText = "Modified";
+      }
+    }
 }
+
+var label = price + "\n" + location;
+
     return(
       <Link to={urlTo} >
-        <li key={this.props.estate.id}  title={price}  style={divStyle} description={location} id={elemId} className={nameofclass}>
-         <div className="ribbonnew" title={location}>
+        <li key={this.props.estate.id}  title={newAdaptText}  style={divStyle} description={location} id={elemId} className={nameofclass}>
+         <div className="ribbonnew" title={label}> 
          
          
           {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
