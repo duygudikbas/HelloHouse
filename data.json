@@ -147,7 +147,7 @@
         50.7747465,
         4.244960499999999
       ],
-      "location": "Hendrik Vanhouchestraat 24, 1600 Sint-Pieters-Leeuw",
+      "location": "Hendrik Vanhouchestraat 24, 1600",
       "price": "335000",
       "description": "Maison très practique avec vue magnifique! Au rdc un hall d'entrée, living, salle à manger, cuisine equipée et garage. Au 1er étage un hall de nuit, 3 chambres spacieuses, une chambre de douche et un petit grenier. Aussi equipé avec un grenier, une terrasse avec débarras et un joli jardin!",
       "properties": [
@@ -16166,6 +16166,66 @@
       "zip": "9880",
       "name": "Aalter",
       "priceDetail": {
+        "priceAptCenter": "3773€",
+        "price_apt_out_of_center": "3933€",
+        "priceHouseCenter": "2533€",
+        "price_house_out_of_center": "3838€",
+        "rangeAptCenter": "377-677€",
+        "range_apt_out_of_center": "383-569€",
+        "rangeHouseCenter": "555-3983€",
+        "range_house_out_of_center": "353-4644€"
+      }
+    },
+    {
+      "id": 6,
+      "zip": "3200",
+      "name": "Aarschot",
+      "priceDetail": {
+        "priceAptCenter": "4545€",
+        "price_apt_out_of_center": "5656€",
+        "priceHouseCenter": "8989€",
+        "price_house_out_of_center": "1212€",
+        "rangeAptCenter": "564-778€",
+        "range_apt_out_of_center": "448-999€",
+        "rangeHouseCenter": "558-3633€",
+        "range_house_out_of_center": "881-4144€"
+      }
+    },
+    {
+      "id": 7,
+      "zip": "8700",
+      "name": "Aarsele",
+      "priceDetail": {
+        "priceAptCenter": "3823€",
+        "price_apt_out_of_center": "3933€",
+        "priceHouseCenter": "3888€",
+        "price_house_out_of_center": "3223€",
+        "rangeAptCenter": "553-777€",
+        "range_apt_out_of_center": "443-999€",
+        "rangeHouseCenter": "883-3333€",
+        "range_house_out_of_center": "993-4444€"
+      }
+    },
+    {
+      "id": 8,
+      "zip": "8211",
+      "name": "Aartrijke",
+      "priceDetail": {
+        "priceAptCenter": "8888€",
+        "price_apt_out_of_center": "8888€",
+        "priceHouseCenter": "8888€",
+        "price_house_out_of_center": "8888€",
+        "rangeAptCenter": "888-777€",
+        "range_apt_out_of_center": "888-999€",
+        "rangeHouseCenter": "888-3333€",
+        "range_house_out_of_center": "888-4444€"
+      }
+    },
+    {
+      "id": 9,
+      "zip": "2630",
+      "name": "Aartselaar",
+      "priceDetail": {
         "priceAptCenter": "3333€",
         "price_apt_out_of_center": "3333€",
         "priceHouseCenter": "3333€",
@@ -16175,26 +16235,6 @@
         "rangeHouseCenter": "333-3333€",
         "range_house_out_of_center": "333-4444€"
       }
-    },
-    {
-      "id": 6,
-      "zip": "3200",
-      "name": "Aarschot"
-    },
-    {
-      "id": 7,
-      "zip": "8700",
-      "name": "Aarsele"
-    },
-    {
-      "id": 8,
-      "zip": "8211",
-      "name": "Aartrijke"
-    },
-    {
-      "id": 9,
-      "zip": "2630",
-      "name": "Aartselaar"
     },
     {
       "id": 10,
@@ -30411,6 +30451,18 @@
     },
     {
       "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
     },
     {
       "id": 8
