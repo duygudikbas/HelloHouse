@@ -15,7 +15,7 @@
 }
 
 #price{
-  color:#FF5A09;
+   color: rgba(121,166,63,1);
   font-size:25px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .propertyDetail h2{
-  color: #F3843E;
+ color: rgba(121,166,63,1);
   font-size:33px;
   font-family: 'Lato', sans-serif;
 }
@@ -36,6 +36,6 @@
 #mapLink {
         margin-left: 84px;
     font-size: 20;
-    color: #F3843E;
+   color: rgba(121,166,63,1);
     font-weight: bold;
 }
