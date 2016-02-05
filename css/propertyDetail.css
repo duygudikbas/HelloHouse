@@ -39,3 +39,6 @@
    color: rgba(121,166,63,1);
     font-weight: bold;
 }
+#addFav:disabled{
+ color: blue;
+}

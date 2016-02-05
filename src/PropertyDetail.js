@@ -45,6 +45,8 @@ var PropertyDetail = React.createClass({
      success: function( response ) 
           { 
             console.log("add done");
+            $("#addFav").addClass("disabled");
+
           }   
     });
 
@@ -129,7 +131,7 @@ var PropertyDetail = React.createClass({
               <Link to="Appointment/AppointmentWhere" className="btn btn_default" >Make Appointment</Link>
             </div>
             <div className="col-xs-6">
-              <button type="button" className="btn btn_default" onClick={this.addToFavorites}>Add to Favourites</button>
+              <button type="button" className="btn btn_default" id="addFav" onClick={this.addToFavorites}>Add to Favourites</button>
             </div>
           </div>
       </div>
