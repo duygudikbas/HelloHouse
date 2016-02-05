@@ -43,43 +43,35 @@
 }
 
 .removeFromFavorites{
-   display:block;
+  display:block;
   position: absolute;
-  bottom : 20px;
-  right: 50px;
-  left : 50px;
-
+  top : 5px;
+  right: 60px;
   width: 20px;
   height: 19px;
-  background: red;
 }
 
 .liResultList.remove {
   }
   .ribbonnew{
      
-        color: green;
-      
-        overflow: hidden;
-        position: relative;
-text-align: center;
-height: 100%;
-
-  }
- .ribbonnew:after {
         position: absolute;
-        content: attr(title);
-        bottom: 0px;
-        left: 0px;
-        height: 30px;
-        width: 100%;
+        text-align: center;
+        bottom: 5px;
+        left: 5px;
+    right: 5px;
+        height: 60px;
+        
         line-height: 30px;
         background: pink;
 
         font-weight: bold;
 
         box-shadow: 5px 5px 20px #888888;
-    }
+ text-align: center;
+  vertical-align: middle; 
+  }
+
      .info{
      
         color: green;
@@ -100,7 +92,7 @@ text-align: center;
         background: pink;
 
         font-weight: bold;
-    transform: rotate(-45deg);  
+        transform: rotate(-45deg);  
         box-shadow: 5px 5px 20px #888888;
     }
   ul {
@@ -113,4 +105,10 @@ text-align: center;
         color: #F3843E;
 }
 
-    
+.spanRibbon1Line{
+  display: inline-block;
+  height: 100%;
+
+  margin-top: 14px;
+
+}

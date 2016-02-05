@@ -16,8 +16,8 @@ var HelloBankApp = React.createClass({
               garage : false,
               pool : false, 
               location : null,
-              house : false,
-              appartment : false,
+              house : true,
+              appartment : true,
               open : false
           }
     };

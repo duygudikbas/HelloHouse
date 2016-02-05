@@ -18,18 +18,33 @@ var RemoveFromFavoritesButton = React.createClass({
 
   render: function(){
     return(
-       <button type="button" className="btn btn_default" onClick={this.removeFromFavorites}>Remove from Favourites</button>
+       <button type="button" className="btn btn_default" onClick={this.removeFromFavorites}>Remove</button>
       )
   }
 });
 
 var AResult = React.createClass({
+  getLocation: function(){
+    if(this.props.estate.location.indexOf('Undisclosed address in ') !== -1) {
+      return this.props.estate.location.replace('Undisclosed address in ', '' );
+    }
+
+    if(this.props.estate.location.indexOf('Address not disclosed') !== -1) {
+      return this.props.estate.location.replace('Address not disclosed', '' );
+    } 
+
+    if(this.props.estate.location.indexOf('Undisclosed number in ') !== -1) {
+      return this.props.estate.location.replace('Undisclosed number in ', '' );
+    } 
+
+    return this.props.estate.location;      
+},
 render: function(){
     var index = this.props.favFlag;
     var urlTo = "/PropertyDetail/"+ this.props.estate.id;
     var price = this.props.estate.price;
     var elemId = "estate"+this.props.estate.id;
-    var location=this.props.estate.location;
+    // var location=this.props.estate.location;
     if (price) {price += " €"};
 
     var divStyle = {
@@ -54,16 +69,19 @@ if (publishDate){
     }
 }
 
-var label = price + "\n" + location;
-
+    var label;
+    if (price.length > 0)
+      label = <span >{price}<br />{this.getLocation()}</span>;
+    else
+      label = <span className="spanRibbon1Line">{this.getLocation()}</span>;
     return(
       <Link to={urlTo} >
+
         <li key={this.props.estate.id}  title={newAdaptText}  style={divStyle} description={location} id={elemId} className={nameofclass}>
-         <div className="ribbonnew" title={label}> 
+         <div className="ribbonnew">{label}
          
-         
-          {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
-       </div>
+         </div>
+         {index >= 0 ? <span className="removeFromFavorites"><RemoveFromFavoritesButton id={this.props.estate.id} onRemoveFavorite={this.props.onRemoveFavorite}/></span> : null}
         </li>
       </Link>
     );
