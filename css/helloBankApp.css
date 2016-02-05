@@ -11,7 +11,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	  background-size: cover;
-        background-image:url("http://localhost:8000/src/bg_img.jpg");
+        background-image:url("../src/bg_img.jpg");
 }
 .app h1 {
     /*color: #F3843E;*/
