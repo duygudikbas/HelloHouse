@@ -29,7 +29,7 @@ var AppointmentWhere = React.createClass({
             <div className="form-group">
                 <div className="form-group">
         
-                  < input id="appLocAutoComplete" type = 'text' ref = 'autocomplete' placeholder="Enter location"/>
+                  < input id="appLocAutoComplete" type = 'text' ref = 'autocomplete' placeholder="Choose Branch"/>
                   <Link to="Appointment/AppointmentWhen" className="btn btn_default pull-right" onClick={this.handleUserAppointmentWhere}>Next</Link>
                 </div>
 

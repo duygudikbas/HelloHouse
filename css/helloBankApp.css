@@ -28,7 +28,7 @@ body {
 
 .panel > .panel-heading {
     background-color: #F3843E;
-    color: black;
+    color: white;
 }
 
 .infoDiv{
@@ -38,6 +38,12 @@ body {
 
 .app p {
     color: white;
+}
+
+#warningSearch{
+      margin-top: 13px;
+    font-size: 20px;
+        margin-top: 31px;
 }
 
 ::-webkit-input-placeholder {
@@ -85,7 +91,7 @@ body {
 
 .btn_default{
   background-color:#F3843E;
-  color:black;
+  color:white;
 }
 
 .successFeedback {
