@@ -128,7 +128,7 @@ var PriceTable = React.createClass({
 	render: function(){
 		return(        
 			<div className="table-responsive" id="priceTable">
-          <table className="table table-hover">
+          <table className="table">
          <thead>
 	       <tr>
 	          <th>Price</th>
