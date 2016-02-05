@@ -182,7 +182,7 @@ $('#garden').prop('checked', false);
 
 console.log("garden "+this.props.filter.garden);
 $('#garden').prop('checked', this.props.filter.garden);
-        var url = "http://localhost:3000/cities";
+        var url = "https://estates-api-custom.herokuapp.com/cities";
 
         $.get(url, function(data) {
             console.log(data);

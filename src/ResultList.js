@@ -5,7 +5,7 @@ var Link = require('react-router').Link
 var RemoveFromFavoritesButton = React.createClass({
   removeFromFavorites : function(event){
     event.preventDefault();
-    var urlRemove = "http://localhost:3000/favorites/" + this.props.id;
+    var urlRemove = "https://estates-api-custom.herokuapp.com/favorites/" + this.props.id;
     $.ajax({
         url: urlRemove,
         type: 'DELETE',
@@ -104,8 +104,8 @@ var ResultList = React.createClass({
 
     if (index >= 0){
       //favorites
-      $.get("http://localhost:3000/favorites", function(favorites) {
-        var urlFavorites = "http://localhost:3000/estates?id=";
+      $.get("https://estates-api-custom.herokuapp.com/favorites", function(favorites) {
+        var urlFavorites = "https://estates-api-custom.herokuapp.com/estates?id=";
         var favList = favorites.map(function(favory){
           return favory.id;
         }).join('&id=');
@@ -115,7 +115,7 @@ var ResultList = React.createClass({
         }.bind(this), 'json');
       }.bind(this), 'json');
     }else {
-      var url = "http://localhost:3000/estates";
+      var url = "https://estates-api-custom.herokuapp.com/estates";
       $.get(url, function(data) {
       this.setState({estates: data});
     }.bind(this), 'json');

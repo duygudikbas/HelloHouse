@@ -10,7 +10,7 @@ var AppointmentWhere = React.createClass({
 
   componentDidMount: function() {
     $(this.refs.autocomplete).val( this.props.where );
-      var url = "http://localhost:3000/cities";
+      var url = "https://estates-api-custom.herokuapp.com/cities";
 
       $.get(url, function(data) {
           var doubles = data.map(function(num) {

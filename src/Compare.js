@@ -45,7 +45,7 @@ var PriceTableRows = React.createClass({
   componentDidUpdate: function(prevProps) {
       if (prevProps.location.locationPrimary != this.props.location.locationPrimary) {
 
-	      var url = "http://localhost:3000/cities?name="+ this.getPrimaryName();
+	      var url = "https://estates-api-custom.herokuapp.com/cities?name="+ this.getPrimaryName();
 		      $.get(url, function(data) {
 		      	// data.priceDetail = {
 		      	// 	priceAptCenter: MAth.random
@@ -55,14 +55,14 @@ var PriceTableRows = React.createClass({
 			} if (prevProps.location.locationSecondary != this.props.location.locationSecondary) {
 	      console.log("getSecondaryURL");
 	      var tempSLocation = $.extend({}, this.state.location);
-	      var url = "http://localhost:3000/cities?name="+ this.getSecondaryName();
+	      var url = "https://estates-api-custom.herokuapp.com/cities?name="+ this.getSecondaryName();
 		      $.get(url, function(data) {
 			      this.setState({secondary: data});
 			    }.bind(this), 'json');
 			}
   },
   componentDidMount: function() {
-      var url = "http://localhost:3000/cities?name="+ this.getPrimaryName();
+      var url = "https://estates-api-custom.herokuapp.com/cities?name="+ this.getPrimaryName();
       console.log(url);
       console.log(this.getPrimaryName());
       $.get(url, function(data) {
@@ -154,7 +154,7 @@ var Compare = React.createClass({
 			this.setState({ showColumnSecondary: false});		
   },
  componentDidMount: function() {
-    var url = "http://localhost:3000/cities";
+    var url = "https://estates-api-custom.herokuapp.com/cities";
     $.get(url, function(data) {
         var doubles = data.map(function(num) {
             return num.zip + "-" + num.name;

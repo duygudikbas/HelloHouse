@@ -19,7 +19,7 @@ var PropertyDetail = React.createClass({
   },
   componentWillMount: function() {
     var estateId = this.props.params.id;
-    var url = "http://localhost:3000/estates"+"/"+estateId;
+    var url = "https://estates-api-custom.herokuapp.com/estates"+"/"+estateId;
     $.get(url, function(data) { 
          this.setState({estate: data});
       }.bind(this));
@@ -35,7 +35,7 @@ var PropertyDetail = React.createClass({
     var newFav = {
       id : this.props.params.id
     }
-    var urlFav = "http://localhost:3000/favorites";
+    var urlFav = "https://estates-api-custom.herokuapp.com/favorites";
 
     $.ajax({
       type: "POST",
