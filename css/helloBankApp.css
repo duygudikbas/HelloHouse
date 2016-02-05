@@ -14,7 +14,9 @@ body {
         background-image:url("http://localhost:8000/src/bg_img.jpg");
 }
 .app h1 {
-    color: #F3843E;
+    /*color: #F3843E;*/
+    color: rgba(121,166,63,1);
+    font-weight: bold;
 }
 
 .app h3 {
@@ -27,12 +29,13 @@ body {
 }
 
 .panel > .panel-heading {
-    background-color: #F3843E;
+   /* background-color: #F3843E;*/
+   background: -webkit-linear-gradient(top, rgba(139,179,86,1) 34%, rgba(139,179,86,1) 38%, rgba(121,166,63,1) 50%, rgba(82,136,12,1) 77%);
     color: white;
 }
 
 .infoDiv{
-	   color: green;
+	  color: rgba(121,166,63,1);
     text-align: center;
 }
 
@@ -90,8 +93,26 @@ body {
 }
 
 .btn_default{
-  background-color:#F3843E;
+/*  background-color:#F3843E;*/
+  background: -webkit-linear-gradient(top, rgba(139,179,86,1) 34%, rgba(139,179,86,1) 38%, rgba(121,166,63,1) 50%, rgba(82,136,12,1) 77%);
   color:white;
+}
+.searchButtons {
+  margin-left: 10px;
+  margin-top: 6px;
+  font-size:15px;
+  color:white;
+}
+
+.btn.active, .btn:active {
+  color:white;
+   outline: none !important;
+  background: -webkit-linear-gradient(top, rgba(139,179,86,1) 34%, rgba(139,179,86,1) 38%, rgba(121,166,63,1) 50%, rgba(82,136,12,1) 77%);
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: white;
+     outline: none !important;
 }
 
 .successFeedback {
@@ -100,24 +121,24 @@ body {
     padding: 11px;
     width: 100%;
     margin-bottom: 13px;
-    color: green;
+   color: rgba(121,166,63,1);
 }
 
 #refineCriteriaAction {
-  color:#F3843E;
+  color: rgba(121,166,63,1);
   text-decoration: none;
 }
 
 .homeLink {
   background-color: transparent;
-  color: #F3843E;
+  color: rgba(121,166,63,1);
   text-decoration: none;
   font-size: 20px;
   margin-left: 230px;
 }
 
 .homeLink:hover {
-  color: #F3843E;
+  color: rgba(121,166,63,1);
   text-decoration: none;
 }
 

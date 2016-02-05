@@ -101,7 +101,7 @@ $('#garden').prop('checked', false);
                     </div>
                 </div> 
  
-                <div className="row">
+                <div className="row"  id="estateOutside">
                 <div className="col-xs-5">
 
                     <input type = "checkbox" name = "garden" id="garden" value = "garden"  ref="garden" onChange={this.setFilter} checked={this.props.filter.garden}/>
@@ -113,7 +113,7 @@ $('#garden').prop('checked', false);
                 </div>
                 <div className="col-xs-3">
                     <input type = "checkbox" name = "pool" onChange={this.setFilter} checked={this.props.filter.pool} value = "pool" ref="pool"/>
-                    <label> pool  < /label> 
+                    <label> Pool  < /label> 
                 </div>
                 </div>
             </div> ;
@@ -168,9 +168,9 @@ $('#garden').prop('checked', false);
                             <input type="number" id="max" placeholder= "max"  ref="maxPrice" onChange={this.setFilter} value={this.props.filter.maxPrice} / >
                         </div>
                     </div>
-                    <div>
-                        <button className="btn btn_default advancedBtn" onClick = {this.handle} > Advanced Search < /button> {advancedSearch} 
-                            <Link to = "/ResultList" className="btn btn_default searchBtn" onClick={this.setFilter}> Search < /Link> 
+                    <div className="searchButtons">
+                        <button className="btn btn_default" onClick = {this.handle} > Advanced Search < /button> {advancedSearch} 
+                            <Link to = "/ResultList" className="btn btn_default" onClick={this.setFilter}> Search < /Link> 
                     </div> 
                 </div>
             </div>
